@@ -9,9 +9,23 @@ import upstash from '@/lib/upstash';
 
 const UUCMS_BASE_URL = 'https://uucms.karnataka.gov.in';
 
-// Setup axios with cookie support
+// Setup axios with cookie support and secure rotating proxy tunnel
+const proxyConfig = {
+  protocol: 'http',
+  host: '31.59.20.176',
+  port: 6754,
+  auth: {
+    username: 'cocgoeaw',
+    password: 'wnfzqrlm2mbs'
+  }
+};
+
 const jar = new CookieJar();
-const client = wrapper(axios.create({ jar, withCredentials: true }));
+const client = wrapper(axios.create({ 
+  jar, 
+  withCredentials: true,
+  proxy: proxyConfig 
+}));
 
 const encryptPassword = (password: string) => {
   const key = CryptoJS.enc.Utf8.parse('8080808080808080');
@@ -79,8 +93,12 @@ export const completeLogin = async (tempSessionId: string, username: string, pas
   const currentJar = CookieJar.fromJSON(typeof jarData === 'string' ? JSON.parse(jarData) : jarData);
   const { csrfToken, generatedCaptcha } = typeof metaData === 'string' ? JSON.parse(metaData) : metaData;
   
-  // Use a dedicated client for this session to handle cookie updates automatically
-  const sessionClient = wrapper(axios.create({ jar: currentJar, withCredentials: true }));
+  // Use a dedicated client for this session to handle cookie updates automatically via secure proxy
+  const sessionClient = wrapper(axios.create({ 
+    jar: currentJar, 
+    withCredentials: true,
+    proxy: proxyConfig
+  }));
   
   const loginUrl = `${UUCMS_BASE_URL}/Login/Index`;
   
