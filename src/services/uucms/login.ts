@@ -12,12 +12,8 @@ const UUCMS_BASE_URL = 'https://uucms.karnataka.gov.in';
 // Setup axios with cookie support and secure rotating proxy tunnel
 const proxyConfig = {
   protocol: 'http',
-  host: '31.59.20.176',
-  port: 6754,
-  auth: {
-    username: 'cocgoeaw',
-    password: 'wnfzqrlm2mbs'
-  }
+  host: '27.34.242.98',
+  port: 80
 };
 
 const jar = new CookieJar();
