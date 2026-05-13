@@ -18,9 +18,15 @@ export default function Home() {
 
   const fetchCaptcha = async () => {
     setIsFetchingCaptcha(true);
+    setCaptchaHint('');
+    setCaptchaImg('');
     try {
       const res = await fetch('/api/auth/initiate');
       const data = await res.json();
+      if (!res.ok) {
+         setCaptchaHint(data.error ? data.error.substring(0, 15) : 'API ERROR');
+         return;
+      }
       if (data.captchaImage) {
         setCaptchaImg(data.captchaImage);
       }
@@ -30,6 +36,7 @@ export default function Home() {
       setTempSessionId(data.tempSessionId);
     } catch (err) {
       console.error('Failed to fetch captcha');
+      setCaptchaHint('NET ERROR');
     } finally {
       setIsFetchingCaptcha(false);
     }
