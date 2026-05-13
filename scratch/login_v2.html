@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>UUCMS - ಸಮಗ್ರ ವಿಶ್ವವಿದ್ಯಾಲಯ ಮತ್ತು ಕಾಲೇಜು ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ </title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/Content/images/favicon.png" rel="icon">
+    <link href="/Content/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <!-- Vendor CSS Files -->
+    
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/Content/dataTables.bootstrap5.3.min.css">
+    <link rel="stylesheet" href="/Content/jquery-ui.min-1.14.1.css">
+    <link rel="stylesheet" href="/Content/jquery-ui-css/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Content/bootstrap-multiselect-1.1.2.min.css">
+    <link rel="stylesheet" href="/Content/dataTables.dataTables.css">
+    <link rel="stylesheet" href="/Content/buttons.dataTables.css">
+    <link rel="stylesheet" href="/Content/css/select2.css">
+    <link rel="stylesheet" href="/Content/aos.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/Site.css">
+    <link rel="stylesheet" href="/Content/loader.css">
+    <link rel="stylesheet" href="/Styles/exam_styles.css">
+    <link rel="stylesheet" href="/Content/plugins.min.css">
+    <link href="/Areas/Scripts/yearpicker.css" rel="stylesheet" />
+
+    <link href="/Content/icofont.min.css" rel="stylesheet" />
+    <link href="/Content/icofont.woff" />
+    <link href="/Content/icofont.woff2" />
+    <link href="/Content/fontawesome-webfont.ttf" />
+    <link href="/Content/fontawesome-webfont.woff" />
+    <link href="/Content/fontawesome-webfont.woff2" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+
+    
+    <script src="/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+    <script src="/Scripts/CaptchaLib.js"></script>
+    <script src="/Scripts/jquery-ui-1.14.1.min.js"></script>
+    <script src="/Scripts/aos.js"></script>
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/aes.js"></script>
+    <style>
+
+        #topbar {
+            background: #07294d;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+            #topbar .contact-info a {
+                line-height: 1;
+                color: #fff;
+                transition: 0.3s;
+            }
+
+                #topbar .contact-info a:hover {
+                    color: #fff;
+                }
+
+            #topbar .contact-info i {
+                color: #428bca;
+            }
+
+        .clearfix {
+            padding: 0px 12px;
+        }
+
+        #topbar .contact-info .icofont-phone {
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        #MenuDiv {
+            background-color: #07294d !important;
+        }
+
+        .drop-down {
+            padding: 5px 5px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: none;
+            color: #103453;
+            background: #fff;
+        }
+
+        a.dropdown-item.dropdown-toggle::after {
+            color: #1324bc !important;
+        }
+
+        li.drop-down > a.dropdown-item:hover, li.drop-down a.dropdown-item:hover a:after {
+            color: #1324bc !important;
+            background-color: transparent;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 10%;
+                left: 100%;
+                margin-top: -1px;
+            }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu > .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: -1px;
+                -webkit-border-radius: 0 6px 6px 6px;
+                -moz-border-radius: 0 6px 6px;
+                border-radius: 0 6px 6px 6px;
+            }
+
+            .dropdown-submenu:hover > .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-submenu > a:after {
+                display: block;
+                content: " ";
+                float: right;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 5px 0 5px 5px;
+                border-left-color: #ccc;
+                margin-top: 5px;
+                margin-right: -10px;
+            }
+
+            .dropdown-submenu:hover > a:after {
+                border-left-color: #fff;
+            }
+
+            .dropdown-submenu.pull-left {
+                float: none;
+            }
+
+                .dropdown-submenu.pull-left > .dropdown-menu {
+                    left: -100%;
+                    margin-left: 10px;
+                    -webkit-border-radius: 6px 0 6px 6px;
+                    -moz-border-radius: 6px 0 6px 6px;
+                    border-radius: 6px 0 6px 6px;
+                }
+
+        a.nav-link.dropdown-toggle {
+            font: bold;
+            color: white;
+        }
+
+        .table-bordered > thead > tr > th {
+            background-color: #07294d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    
+<style type="text/css">
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #profile .dropdown-menu li {
+        padding-left: 1em;
+        padding-bottom: 5px;
+    }
+
+    .login-user-align {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .login-user-align > p {
+            padding-right: 25px;
+        }
+</style>
+<header class="header-area">
+    <div class="container-fluid p-0">
+
+        <section id="topbar" class="d-lg-block rounded-top">
+            <div class="clearfix">
+                <div class="contact-info float-start">
+                    <i class="icofont-envelope"></i><a>contact-uucms.helpdesk@gmail.com</a>
+                </div>
+                <div class="social-links float-end me-18">
+                    <a class='whiteblack accessibility' href='#' onclick="changeColor()" title='Black and White'>A</a>
+                    <a class='standards accessibility' href='#' onclick="defaultColor()" title='Standard'>A</a>
+                    <button id="decreasetext" class="font-size-btn accessibility">
+                        <span>-</span>
+                    </button>
+                    <button id="resettext" class="font-size-btn accessibility">
+                        <span>A</span>
+                    </button>
+                    <button id="increasetext" class="font-size-btn accessibility">
+                        <span>+</span>
+                    </button>
+					
+                </div>
+            </div>
+        </section>
+
+        <section id="kan_banner" class="banner" style="display:none">
+            <div class="row">
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/UUCMS_Logo-01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_kan/sid_cm_kan.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_kan/new_min_kan.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/gok-logo-uucms-kn.png" class="img-fluid" />
+					
+                </div>
+            </div>
+        </section>
+        <section id="eng_banner" class="banner">
+            <div class="row">
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/UUCMS_Logo-01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_eng/sid_cm_eng.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_eng/new_min_eng.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_eng/gok-logo-uucms-en.png" class="img-fluid" />
+					
+                </div>
+            </div>
+        </section>
+		<section>
+		<div class ="bhashini-plugin-container"></div>
+					 <script src="https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js" data-pos-x="95" data-pos-y="5"></script>
+		</section>
+
+    </div>
+
+</header>
+<style>
+.bhashini-plugin-container{
+position:absolute;
+top:65px;
+right:25px;
+background-color:#EF731B;
+ 
+}
+ 
+</style>
+<script type="text/javascript">
+    function onLinguistics(element) {
+
+        if ($(element).hasClass("knlan")) {
+            $("#eng_banner").hide();
+            $("#kan_banner").show();
+        }
+        else {
+            $("#kan_banner").hide();
+            $("#eng_banner").show();
+        }
+    }
+	 
+</script>
+    <div class="loader-modal" style="display:none;">
+        <div class="loader"></div>
+    </div>
+
+    <main id="main" class="main-head">
+        
+
+
+
+<style type="text/css">
+    h2 {
+        color: #ff6a00;
+    }
+
+    .login-box {
+        background-color: #07294D;
+        /* padding: 10px; */
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    #pills-tab {
+        background: #ccc;
+        border-radius: 5px;
+    }
+
+    .login-inner-section .nav-link {
+        padding: 0.5rem 0.2rem;
+        font-size: 14px;
+    }
+
+    .nav-pills .nav-link {
+        border-radius: .25rem;
+    }
+
+    .login-inner-section .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #EF731B;
+    }
+
+    .register-link, .register-link:hover, .click-here-link, .click-here-link:hover {
+        color: #EF731B;
+        /* text-decoration: none; */
+    }
+
+    .login-form-section > .tablinks a {
+        color: #EF731B;
+    }
+
+    .captcha_background {
+        background-image: url(../../Content/images/captchaimage.png);
+        padding: 0px 0px;
+        width: 200px !important;
+        color: #000000 !important;
+        font-weight: 700;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .login-box .form-control, .login-box .form-control:focus {
+        background-color: #07294D;
+        color: #fff;
+    }
+</style>
+<div class="row " style="min-height:100vh">
+    <div class="col-md-12" id="login-form" style="background-image: url('../../Content/images/loginpage-background-image.png');">
+        
+<link href="/Styles/style.css" rel="stylesheet" />
+<form action="/Login/Index" autocomplete="off" id="loginformsubmit" method="post"><input name="__RequestVerificationToken" type="hidden" value="82-FNSSJAoPraZpjglkmv2aeLbDVJlW-T3KTQPj5WTrQMU_2DdsylBaHCSR7UpprMUbGbJ7OwReu8ed1GNZrqp8Wfmw4jGTje8Vb7BGX_l01" />    <div class="_mn_df h-100 ">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/Login/Index_Eng" class="float-end backtohome"><i class="fa fa-backward" aria-hidden="true">&nbsp;&nbsp;Back To Home</i></a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 login-box mx-auto" id="Form">
+            <div class="login-inner-section p-2">
+                <div class="nav-tabs-section">
+                    <ul class="nav nav-pills nav-fill d-flex flex-wrap gap-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link organization" id="pills-stateadmin-tab" data-bs-toggle="pill" href="#pills-stateadmin" role="tab" aria-controls="pills-stateadmin">State Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link organization" id="pills-university-tab" data-bs-toggle="pill" href="#pills-university" role="tab" aria-controls="pills-university">University</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link organization" id="pills-college-tab" data-bs-toggle="pill" href="#pills-college" role="tab" aria-controls="pills-college">College/PG Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active organization" id="pills-student-tab" data-bs-toggle="pill" href="#pills-student" role="tab" aria-controls="pills-student" aria-selected="true">Student</a>
+                        </li>
+                        <li class="nav-item ksou-regional">
+                            <a class="nav-link  organization" id="pills-ksou-tab" data-bs-toggle="pill" href="#pills-ksou" role="tab" aria-controls="pills-ksou">KSOU Reg Centre</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-form-section mt-3">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-stateadmin" role="tabpanel" aria-labelledby="pills-stateadmin-tab"> </div>
+                        <div class="tab-pane fade" id="pills-university" role="tabpanel" aria-labelledby="pills-university-tab"> </div>
+                        <div class="tab-pane fade" id="pills-college" role="tabpanel" aria-labelledby="pills-college-tab"> </div>
+                        <div class="tab-pane fade" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-12 col-sm-6 col-md-6 d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">Regular Student</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2">
+                                        <label class="form-check-label" for="exampleRadios2">KSOU Student</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-ksou" role="tabpanel" aria-labelledby="pills-ksou-tab"> </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                        <label for="txtUserName" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="txtUserName" name="UserName" placeholder="Enter username">
+                    </div>
+                    <div>
+                        <label for="txtPassword" class="form-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="txtPassword" name="Password" placeholder="Enter password">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye-slash" id="viewPassword"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-text float-end text-white">
+                        <small>Forgot Password?<span class="ms-2"><a href="/Contact/ForgotPassword" class="click-here-link">Click Here</a></span></small>
+                    </div>
+                </div> <br />
+                <div class="col-12">
+                    <div>
+                        <label for="Input_captcha">Enter Captcha</label>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="">
+                            <input type="text" class="form-control captcha_background" id="Generatedcaptcha" aria-label="captcha" aria-describedby="basic-addon2" style="color: #000000;" readonly>
+                        </div>
+                        <div class="">
+                            <img src="/Content/images/refresh-icon.png" alt="RefreshCaptcha" class="refresh-section" onclick="fn_refresh_captcha()" />
+                        </div>
+                        <div class="">
+                            <input type="text" class="form-control numericOnly" id="Input_captcha" maxlength="5" aria-describedby="emailHelp" placeholder="Enter Captcha">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center mx-auto col-12">
+                        <button type="button" class="btn btn-primary login-btn col-sm-4 col-md-4" id="Submit">Log In</button>
+                    </div>
+                    <div class="text-center mt-3 tablinks" id="link3">
+                        <a href="/Content/Doc/AcademicsUserManual.pdf" target="_blank" class="text-orange">Download Academics Manual</a><br />
+                        <a href="/Content/Doc/UUCMS_College_Admin_Manual_V1.1_17092021 (1).pdf" target="_blank" class="text-orange">Download College Manual</a><br />
+                        <a href="/Content/Doc/FAQ.pdf" target="_blank" class="text-orange">Admission FAQ</a>
+                    </div>
+                    <div class="text-center mt-3 tablinks" id="link5">
+                        <a href="/Content/Doc/AcademicsUserManual.pdf" target="_blank" class="text-orange">Download Academics Manual</a><br />
+                        <a href="/Content/Doc/UUCMS_College_Admin_Manual_V1.1_17092021 (1).pdf" target="_blank" class="text-orange">Download College Manual</a><br />
+                        <a href="/Content/Doc/FAQ.pdf" target="_blank" class="text-orange">Admission FAQ</a>
+                    </div>
+                    <div class="text-center mt-3 tablinks" id="link4">
+                        <div class="register-link-section mt-4 text-center">
+                            <span class="ms-2"><a href="/Login/OnlineStudentRegistrationForm" class="register-link" id="studentlink">New Candidate Registration?</a></span>
+                            
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="/Content/doc/Student Manual_v 1.0.pdf" target="_blank" class="text-orange cursor-pointer">Download Students Manual</a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3 tablinks" id="link2">
+                        <a href="/Content/doc/UUCMS_University_Admin_Manual_V2.1_17092021.pdf" target="_blank" class="text-orange">Download University Manual</a><br />
+                        <a href="" class="text-orange">Download Regional Center Manual</a>
+                    </div>
+                    <div class="text-center mt-3 tablinks" id="link1">
+                        <a href="" class="text-orange">Download State Admin Manual</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <input htmlAttributes="{ id = HiddenUserName }" id="HiddenUserName" name="HiddenUserName" type="hidden" value="" />
+                    <input htmlAttributes="{ id = HiddenPassword }" id="HiddenPassword" name="HiddenPassword" type="hidden" value="" />
+                    <input htmlAttributes="{ id = HiddenInputCaptcha }" id="HiddenInputCaptcha" name="HiddenInputCaptcha" type="hidden" value="" />
+                    <input htmlAttributes="{ id = HiddenGeneratedCaptcha }" id="HiddenGeneratedCaptcha" name="HiddenGeneratedCaptcha" type="hidden" value="" />
+                    <input type="hidden" id="hdnOrg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form><script src="../Scripts/aes.js"></script>
+<script>
+    window.history.forward();
+    function noBack() { window.history.forward(); }
+    function OnWindowResize() {
+        let windowWith = $(window).width();
+        if (windowWith <= 576) {
+            $("#Input_captcha").addClass("mt-2");
+            $("#Submit").addClass("mt-2");
+        }
+        else if (windowWith <= 912){
+            $("#Input_captcha").addClass("mt-2");
+            $("#Submit").addClass("mt-2");
+        }
+        else {
+            $("#Input_captcha").removeClass("mt-2");
+            $("#Submit").addClass("mt-2");
+        }
+    }
+    $(document).ready(function () {
+        OnWindowResize();
+        $(window).on('resize', OnWindowResize);
+    });
+    $(function () {
+
+        $('#viewPassword').click(function () {
+
+            if ($(this).hasClass('fa-eye-slash')) {
+
+                $(this).removeClass('fa-eye-slash');
+
+                $(this).addClass('fa-eye');
+
+                $('#txtPassword').attr('type', 'text');
+
+            } else {
+
+                $(this).removeClass('fa-eye');
+
+                $(this).addClass('fa-eye-slash');
+
+                $('#txtPassword').attr('type', 'password');
+            }
+        });
+
+
+    });
+    function fn_refresh_captcha() {
+        DrawCaptcha("Generatedcaptcha", 5);
+    }
+    function radioButtonCheck1() {
+        if ($("#loginType:checked").val() == "Regular") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").hide();
+            $(".distanceLearning").hide();
+            $(".regular").show();
+        }
+        else if ($("#loginType:checked").val() == "DistanceLearning") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").hide();
+            $(".distanceLearning").show();
+            $(".regular").hide();
+
+        }
+    }
+
+    function radioButtonCheck(el) {
+        alert("radioButtonCheck : "+$(el).html());
+        var ax1 = $("#nav-profile-tab");
+        var x = ax1[0].ariaSelected;
+        var ax = $("#nav-home-tab");
+        var b = ax[0].ariaSelected;
+        console.log("x: " + x+", b: "+b);
+        if ($(el).html() == "Collage") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").hide();
+            $("#College").show();
+            $("#university").hide();
+            $("#hdnOrg").html("Collage");
+        }
+
+        else if ($(el).html() == "University") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").hide();
+            $("#College").hide();
+            $("#university").show();
+            $("#hdnOrg").val("University");
+        }
+        else if ($(el).html() == "RegionalCenter") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").hide();
+            $("#College").hide();
+            $("#university").show();
+            $("#hdnOrg").val("RegionalCenter");
+        }
+        else if ($(el).html() == "stateadmin") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").hide();
+            $("#College").hide();
+            $("#university").hide();
+            $("#hdnOrg").val("stateadmin");
+        }
+        else if ($(el).html() == "Student") {
+            $("#candidateRegistration").hide();
+            $("#candidateRegistrationKSOU").show();
+            $("#College").hide();
+            $("#university").hide();
+            $("#hdnOrg").val("Student");
+        }
+        else if ($(el).html() == "Student") {
+            $("#candidateRegistration").show();
+            $("#candidateRegistrationKSOU").hide();
+            $("#College").hide();
+            $("#university").hide();
+            $("#hdnOrg").val("Student");
+        }
+
+    }
+
+    function ksou(type) {
+        if (type == 'Regular') {
+            $("#studentlink").attr("href", "/Login/OnlineStudentRegistrationForm");
+            console.log("URL set to: /Login/OnlineStudentRegistrationForm"); // Debugging log
+        } else {
+            $("#studentlink").attr("href", "/StudentRegistration/RegistrationFormKSOU");
+            console.log("URL set to: /StudentRegistration/RegistrationFormKSOU"); // Debugging log
+        }
+    }
+
+
+    $(document).ready(function () {
+
+        $("#hdnOrg").val("Student");
+        $(".distanceLearning").hide();
+        $("#candidateRegistration").hide();
+        $("#candidateRegistrationKSOU").hide();
+        $("#College").hide();
+        $("#university").hide();
+        $('#txtUserName').val("");
+        $('#txtPassword').val("");
+        $(".tablinks").hide();
+        $("#link4").show();
+
+        $("#reset").click(function () {
+            $('#txtUserName').val("");
+            $('#txtPassword').val("");
+        });
+        $(".organization").click(function (e) {
+
+            $("#hdnOrg").val($(this).html());
+
+            if ($(this).html() == "College/PG Center") {
+                $(".tablinks").hide();
+                $("#link3").show();
+            }
+
+            else if ($(this).html() == "University") {
+                $(".tablinks").hide();
+                $("#link2").show();
+            }
+
+            else if ($(this).html() == "State Admin") {
+                $(".tablinks").hide();
+                $("#link1").show();
+            }
+            else if ($(this).html() == "Student") {
+                $(".tablinks").hide();
+                $("#link4").show();
+            }
+            else if ($(this).html() == "KSOU Reg Centre") {
+                $(".tablinks").hide();
+                $("#link5").show();
+            }
+        });
+        $('#Input_captcha').keypress(function (e) {
+
+            var key = e.which;
+            if (key == 13)  // the enter key code
+            {
+                $('#Submit').click();
+            }
+        });
+        $("#Submit").click(function (e) {
+            e.preventDefault()
+            let UserName1 = $('#txtUserName').val();
+            let Password1 = $('#txtPassword').val();
+            Password1 = encodeURIComponent(Password1);
+
+    if (UserName1 == "") {
+        bootbox.alert("User Name is required field");
+    } else if (Password1 == "") {
+        bootbox.alert("Password is required field");
+    } else if ($("#Generatedcaptcha").val() == "") {
+        location.reload();
+    } else if ($("#Input_captcha").val() == "") {
+        bootbox.alert("Please Enter Captcha.");
+    } else {
+        var key = CryptoJS.enc.Utf8.parse('8080808080808080');
+        var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+        var encryptedlogin = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(UserName1), key,
+            { keySize: 128 / 8, iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
+        $('#HiddenUserName').val(encryptedlogin);
+
+        var encryptedpassword = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(Password1), key,
+            { keySize: 128 / 8, iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
+        $('#HiddenPassword').val(encryptedpassword);
+
+        var Generatedcaptcha = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse($("#Generatedcaptcha").val()), key,
+            { keySize: 128 / 8, iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
+        $('#HiddenGeneratedCaptcha').val(Generatedcaptcha);
+
+        var Inputcaptcha = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse($("#Input_captcha").val()), key,
+            { keySize: 128 / 8, iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
+        $('#HiddenInputCaptcha').val(Inputcaptcha);
+
+        var model = {
+            HiddenUserName: $('#HiddenUserName').val(),
+            HiddenPassword: $('#HiddenPassword').val(),
+            organization: $("#pills-tab li.nav-item a.nav-link.active").text().trim(),
+            loginType: $("#loginType:checked").val(),
+            HiddenInputCaptcha: $('#HiddenInputCaptcha').val(),
+            HiddenGeneratedCaptcha: $('#HiddenGeneratedCaptcha').val(),
+        };
+        function encryp(password) {
+            var key = CryptoJS.enc.Utf8.parse('8080808080808080');
+            var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+            var encryptedpassword = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(password), key,
+                {
+                    keySize: 128 / 8,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    padding: CryptoJS.pad.Pkcs7
+                });
+
+            $('#txtPassword').val(encryptedpassword);
+        }
+        var forms = $("#LoginView");
+        var token = $('input[name="__RequestVerificationToken"]', forms).val();
+        loaderfadIn();
+        $.ajax({
+            contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+            url: '/Login/Index',
+            type: 'POST',
+            data: {
+                model: model,
+            },
+            dataType: 'JSON',
+            async: false,
+            error: function (xhr) {
+                loaderfadOut();
+                bootbox.alert("Failed to login. Please try again later");
+            },
+            success: function (response) {
+                var redirect = response.redirectTo;
+
+                if (redirect != "" && redirect != null) {
+
+                    if (redirect == "OnLoginSucess") { location.replace("../Login/" + redirect); }
+                    else {
+                        location.replace("../Mfa/" + redirect);
+                    }
+                    $("#Form").hide();
+                } else {
+                    loaderfadOut();
+                    bootbox.alert(response.message);
+                    fn_refresh_captcha();
+                }
+            },
+            processData: true
+        });
+    }
+});
+
+});
+$("#txtUserName").blur(function () {
+var text = document.getElementById('txtUserName').value;
+;
+if (text != "" && ($('#exampleRadios1')[0].checked == true)) {
+    var reg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    if (reg.test(text)) {
+        bootbox.alert("Enter Regular Student UserName");
+        $("#txtUserName").val("");
+    }
+}
+});
+$("#txtUserName").blur(function () {
+var text = document.getElementById('txtUserName').value;
+if (text != "" && ($('#exampleRadios1')[0].checked == true)) {
+    var regex = /^(0|91)?[6-9][0-9]{9}$/;
+    if (regex.test(text)) {
+        bootbox.alert("Enter Regular Student UserName");
+        $("#txtUserName").val("");
+    }
+}
+});
+
+$('#loginformsubmit').submit(function (e) {
+var currentForm = this;
+e.preventDefault();
+var username = $("#txtUserName").val();
+var password = $("#txtPassword").val();
+if (username != "" && password != "") {
+    currentForm.submit();
+}
+else {
+    alert("Either User Name / Password is wrong. Please try again.");
+    $("#txtUserName").val("");
+    $("#txtPassword").val("");
+}
+});
+
+$("#Generatedcaptcha").bind('copy', function (e) {
+e.preventDefault();
+});
+$("#Input_captcha").bind('paste', function (e) {
+e.preventDefault();
+});
+$(".numericOnly").bind('keypress', function (e) {
+if (e.keyCode == '9' || e.keyCode == '16') {
+    return;
+}
+var code;
+if (e.keyCode) code = e.keyCode;
+else if (e.which) code = e.which;
+if (e.which == 46)
+    return false;
+if (code == 8 || code == 46)
+    return true;
+if (code < 48 || code > 57)
+    return false;
+});
+</script>
+
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+
+        if (false) {
+
+            $("#myModal").modal(); 
+
+
+        }
+         DrawCaptcha("Generatedcaptcha", 5);
+        $('#UserName').on('keypress', function (e) {
+        if (e.which == 32) {
+            return false;
+        }
+    });
+        $('#Password').on('keypress', function (e) {
+        if (e.which == 32) {
+            return false;
+        }
+    });
+});
+
+    function fn_refresh_captcha() {
+    DrawCaptcha("Generatedcaptcha", 5);
+}
+</script>
+
+    </main>
+
+    <section id="con" class="footer" style="background-color:#07294d; padding: 1px 0px 1px 0px; margin: 10px 0px 0px 0px;">
+        <div class="container-fluid">
+            <div class="col-md-12">
+
+                <div class="disclaimer">
+
+                    <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Disclaimer:</span>Please note this page also provides links to websites/web pages of Govt. Ministries/Departments/Organisations.The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion. This application is best viewed and fully supported on web-based platforms using the latest version of Google Chrome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="con" class="footer-tollnumber" style="background-color:#07294d; padding: 1px 0px 1px 0px">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="disclaimer">
+                        <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Technical Help Desk Number :</span>080-24411500(10AM-5.30PM)</p>
+                        <h6 class="text-white text-center mt-1 pb-1" style="font-size:12px;"><span class="disclaimer">Email:</span> uucms.helpdesk@karnataka.gov.in</h6>
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="disclaimer">
+                                <p class="text-white text-center mt-1" style="font-size:12px;">
+                                    <span class="disclaimer">For Payment Related Queries, please contact :</span>+91-022-24994200, +91-022-49142595 <span class="disclaimer">Email:</span> info_ndml@ndml.in
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="disclaimer">
+                                <p class="text-white text-center mt-1" style="font-size:12px;">
+                                    <span class="disclaimer"> Bhashini Disclaimer :</span> <a style="color:white" href="https://bhashini.gov.in/gyankosh?tab=terms-of-use&fromFooter=true" target="_blank">Legal & Policies - Terms of Use</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="copyright-section">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p style="font-size:12px;"> Copyright &copy; 2021 all rights reserved. Designed &amp; Developed by Centre for Smart Governance (V_ADM_4.10_A1.7_E_0.3)<span style="color:#fff">S9</span></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/Scripts/jquery-dropdown-datepicker.min.js"></script>
+
+    <script src="/Scripts/select2.min.js"></script>
+
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/bootstrap-multiselect-1.1.2.min.js"></script>
+    <script src="/Scripts/bootbox.min.js"></script>
+    <script src="/Scripts/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/dataTables.js"></script>
+    <script src="/Scripts/dataTables.buttons.js"></script>
+    <script src="/Scripts/buttons.dataTables.js"></script>
+    <script src="/Scripts/jszip.min.js"></script>
+    <script src="/Scripts/pdfmake.min.js"></script>
+    <script src="/Scripts/vfs_fonts.js"></script>
+    <script src="/Scripts/buttons.html5.min.js"></script>
+    <script src="/Scripts/buttons.print.min.js"></script>
+    <script src="/Scripts/dataTables.bootstrap5.3.min.js"></script>
+    <script src="/Scripts/dataTables.fixedHeader.min.js"></script>
+
+    <script src="/Scripts/common.js"></script>
+    <script src="/Scripts/ajaxCall.js"></script>
+    <script src="/Scripts/XSS-validation-0.0.1.js"></script>
+    <script src="/Areas/Scripts/yearpicker.js"></script>
+    
+</body>
+</html>
+<script>
+
+    function downloadFile(folder, filename) {
+        window.open("/Login/DownloadFile?folder=" + folder + "&filename=" + filename, "_blank");
+    }
+
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    }
+
+    document.onkeydown = (e) => {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+        if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+            return false;
+    };
+
+
+</script>

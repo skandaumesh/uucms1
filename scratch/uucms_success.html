@@ -1,0 +1,2740 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>UUCMS - ಸಮಗ್ರ ವಿಶ್ವವಿದ್ಯಾಲಯ ಮತ್ತು ಕಾಲೇಜು ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ </title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/Content/images/favicon.png" type="image/png" />
+    <link href="/Content/images/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <!-- Vendor CSS Files -->
+    
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/Content/dataTables.bootstrap5.3.min.css">
+    <link rel="stylesheet" href="/Content/jquery-ui.min-1.14.1.css">
+    <link rel="stylesheet" href="/Content/jquery-ui-css/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Content/bootstrap-multiselect-1.1.2.min.css">
+    <link rel="stylesheet" href="/Content/dataTables.dataTables.css">
+    <link rel="stylesheet" href="/Content/buttons.dataTables.css">
+    <link rel="stylesheet" href="/Content/css/select2.css">
+    <link rel="stylesheet" href="/Content/aos.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/Site.css">
+    <link rel="stylesheet" href="/Content/loader.css">
+    <link rel="stylesheet" href="/Styles/exam_styles.css">
+    <link rel="stylesheet" href="/Content/plugins.min.css">
+
+
+    <link href="/Content/icofont.min.css" rel="stylesheet" />
+    <link href="/Content/icofont.woff" />
+    <link href="/Content/icofont.woff2" />
+    <link href="/Content/fontawesome-webfont.ttf" />
+    <link href="/Content/fontawesome-webfont.woff" />
+    <link href="/Content/fontawesome-webfont.woff2" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+
+    
+    <script src="/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+    <script src="/Scripts/CaptchaLib.js"></script>
+    <script src="/Scripts/jquery-ui-1.14.1.min.js"></script>
+    <script src="/Scripts/aos.js"></script>
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/aes.js"></script>
+    <script src="/Scripts/digital-signature-certificate-service.js"></script>
+   
+    <style>
+
+        #topbar {
+            background: #07294d;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+            #topbar .contact-info a {
+                line-height: 1;
+                color: #fff;
+                transition: 0.3s;
+            }
+
+                #topbar .contact-info a:hover {
+                    color: #fff;
+                }
+
+            #topbar .contact-info i {
+                color: #428bca;
+            }
+
+        .clearfix {
+            padding: 0px 12px;
+        }
+
+        #topbar .contact-info .icofont-phone {
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        #MenuDiv {
+            background-color: #07294d !important;
+        }
+
+        .drop-down {
+            padding: 5px 5px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: none;
+            color: #103453;
+            background: #fff;
+        }
+
+        a.dropdown-item.dropdown-toggle::after {
+            color: #1324bc !important;
+        }
+
+        li.drop-down > a.dropdown-item:hover, li.drop-down a.dropdown-item:hover a:after {
+            color: #1324bc !important;
+            background-color: transparent;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 10%;
+                left: 100%;
+                margin-top: -1px;
+            }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu > .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: -1px;
+                -webkit-border-radius: 0 6px 6px 6px;
+                -moz-border-radius: 0 6px 6px;
+                border-radius: 0 6px 6px 6px;
+            }
+
+            .dropdown-submenu:hover > .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-submenu > a:after {
+                display: block;
+                content: " ";
+                float: right;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 5px 0 5px 5px;
+                border-left-color: #ccc;
+                margin-top: 5px;
+                margin-right: -10px;
+            }
+
+            .dropdown-submenu:hover > a:after {
+                border-left-color: #fff;
+            }
+
+            .dropdown-submenu.pull-left {
+                float: none;
+            }
+
+                .dropdown-submenu.pull-left > .dropdown-menu {
+                    left: -100%;
+                    margin-left: 10px;
+                    -webkit-border-radius: 6px 0 6px 6px;
+                    -moz-border-radius: 6px 0 6px 6px;
+                    border-radius: 6px 0 6px 6px;
+                }
+
+        a.nav-link.dropdown-toggle {
+            font: bold;
+            color: white;
+        }
+
+        .table-bordered > thead > tr > th {
+            background-color: #07294d;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+<style type="text/css">
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #profile .dropdown-menu li {
+        padding-left: 1em;
+        padding-bottom: 5px;
+    }
+
+    .login-user-align {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .login-user-align > p {
+            padding-right: 25px;
+        }
+</style>
+<header class="header-area">
+    <div class="container-fluid p-0">
+
+        <section id="topbar" class="d-lg-block rounded-top">
+            <div class="clearfix">
+                <div class="contact-info float-start">
+                    <i class="icofont-envelope"></i><a>contact-uucms.helpdesk@gmail.com</a>
+                </div>
+                <div class="social-links float-end me-18">
+                    <a class='whiteblack accessibility' href='#' onclick="changeColor()" title='Black and White'>A</a>
+                    <a class='standards accessibility' href='#' onclick="defaultColor()" title='Standard'>A</a>
+                    <button id="decreasetext" class="font-size-btn accessibility">
+                        <span>-</span>
+                    </button>
+                    <button id="resettext" class="font-size-btn accessibility">
+                        <span>A</span>
+                    </button>
+                    <button id="increasetext" class="font-size-btn accessibility">
+                        <span>+</span>
+                    </button>
+					
+                </div>
+            </div>
+        </section>
+
+        <section id="kan_banner" class="banner" style="display:none">
+            <div class="row">
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/UUCMS_Logo-01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_kan/sid_cm_kan.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_kan/new_min_kan.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/gok-logo-uucms-kn.png" class="img-fluid" />
+					
+                </div>
+            </div>
+        </section>
+        <section id="eng_banner" class="banner">
+            <div class="row">
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/UUCMS_Logo-01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_eng/sid_cm_eng.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_eng/new_min_eng.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_eng/gok-logo-uucms-en.png" class="img-fluid" />
+					
+                </div>
+            </div>
+        </section>
+		<section>
+		<div class ="bhashini-plugin-container"></div>
+					 <script src="https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js" data-pos-x="95" data-pos-y="5"></script>
+		</section>
+
+    </div>
+        <div class="container-fluid p-0 nav-menu rounded" id="MenuDiv">
+            <nav class="navbar navbar-expand-lg navbar-dark rounded">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icofont-navigation-menu text-black"></i><br>
+                        <!--<span class="navbar-toggler-icon"></span>-->  <!-- This creates the 3-line burger icon -->
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="active"><a class="nav-link active" href="/Login/Success">Home</a></li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Student" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Student">Student</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Student">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Student Profile</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentProfile/StudentProfile">Student Profile</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Profile Edit List</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentProfile/GetStudentProfileEditDetailssp">Profile Edit List</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Scholarship</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Scholarship Notifications">Scholarship</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Hostel Notifications</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Hostel Notifications">Hostel Notifications</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Placement News</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Placement News">Placement News</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Defence/Govt Recruitment</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Defence/Govt Recruitment Notifications">Defence/Govt Recruitment</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Internship &amp; Training</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Internship Training Notifications">Internship &amp; Training</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Cultural/Sports</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Extra Curricular">Cultural/Sports</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Other Notifications</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Other Notifications">Other Notifications</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Revalidate Aadhaar</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentRegistration/ManageProfile">Revalidate Aadhaar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Bus Pass</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentProfile/BusPass">Bus Pass</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Academics" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Academics">Academics</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Academics">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Course Registration</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/CourseRegistrationByStudent/StudentCourses">Course Registration</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Academic Calender Of Events</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/HolidayList/StudentView">HolidayList</a></li>
+                                                                <li class="drop-down"><a class="dropdown-item" href="/AcademicCalenderOfEvents/AcademicCalendarStudentView">Calendar of Events</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">View Timetable</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/TimeTable/StudentTimeTable">View Timetable</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Proctor/Counsellor System</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ProctorSystem/StudentProctorDetails">View Assigned Proctor/Counsellor</a></li>
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ProctorSystem/StudentMeetingDetails">View Meetings</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Exam" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Exam">Exam</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Exam">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Exam Applications</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ExamGeneral/ExamApplications">Exam Applications</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Student Fee Payment Transaction Details</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/GeneralFee/StudentwiseTransactionHistory">Student Fee Payment Transaction Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Exam Re-evaluation</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ExamReEvaluation/StudentRevaluations">Exam Re-evaluation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Rejection of Results</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ExamGeneral/RejectionApplication">Rejection of Results</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Challenge Valuation</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ChallengeEvaluation/ChallengeEvaluationAplications">Exam challenge-valuation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Convocation</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/Convocation/StudentConvocationNotificationDetails">Convocation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Student Services</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentServices/ApplyForStudentServices">Student Services</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Reports" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Reports">Reports</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Reports">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Admission Payment Transaction History</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/MIS/CandidateAdmissionTransactionHistory">Admission Payment Transaction History</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Help Desk" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Help Desk">Help Desk</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Help Desk">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Raise Compliant</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/HelpDesk/RegisterComplaint">Raise Compliant</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">View Compliant</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/HelpDesk/viewComplaintDetails">View Compliant</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+
+                        </ul>
+
+                    </div>
+                        <div class="dropdown dropbtn" accesskeyid="profile">
+                            <button class="btn  dropdown-toggle" style="color:white;" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <em class="mr-2"><i class="fa fa-user-circle  fa-1x " aria-hidden="true"></i></em>
+                            </button>
+							 
+                   
+                            <ul class="dropbtn dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                								
+                                <li>
+                                    <a class="nav-link" href="/Login/Logout" onclick="removeSessionCookie(); window.location.href=&#39;/Login/Logout&#39;; return false;">Logout</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 login-user-align">
+                        <p class="login-name ">SKANDA M U UMESH (MLA Academy of Higher Learning, Malleswaram, )</p>
+            </div>
+        </div>
+
+</header>
+<style>
+.bhashini-plugin-container{
+position:absolute;
+top:65px;
+right:25px;
+background-color:#EF731B;
+ 
+}
+ 
+</style>
+<script type="text/javascript">
+    function onLinguistics(element) {
+
+        if ($(element).hasClass("knlan")) {
+            $("#eng_banner").hide();
+            $("#kan_banner").show();
+        }
+        else {
+            $("#kan_banner").hide();
+            $("#eng_banner").show();
+        }
+    }
+	 
+</script>
+    <div class="loader-modal" style="display:none;">
+        <div class="loader"></div>
+    </div>
+
+    <main id="main" class="main-head">
+        
+
+
+<style>
+    .inforide {
+        box-shadow: 1px 2px 8px 0px #f1f1f1;
+        background-color: white;
+        border-radius: 8px;
+        height: 125px;
+        background: #60b9c7;
+    }
+
+        .inforide.dashboard1 {
+            background: #73a7d4;
+        }
+
+        .inforide.dashboard2 {
+            background: #31d09a;
+        }
+
+        .inforide.dashboard3 {
+            background: rgb(169 255 0 / 50%);
+        }
+
+        .inforide.dashboard4 {
+            background: #d67767ad;
+        }
+
+        .inforide.dashboard5 {
+            background: aquamarine;
+        }
+
+    .danger {
+        background-color: #ffdddd;
+        border-left: 6px solid #f44336;
+    }
+
+    .blink {
+        animation: blinker 1.5s linear infinite;
+        color: #000000;
+        font-size: larger;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .scroll-left {
+        height: 70px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .scroll-left h4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 70px;
+            text-align: center;
+            /* Starting position */
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            /* Apply animation to this element */
+            -moz-animation: scroll-left 10s linear infinite;
+            -webkit-animation: scroll-left 10s linear infinite;
+            animation: scroll-left 10s linear infinite;
+        }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+
+        100% {
+            -moz-transform: translateX(-100%);
+        }
+    }
+
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%); /* Browser bug fix */
+            -webkit-transform: translateX(100%); /* Browser bug fix */
+            transform: translateX(100%);
+        }
+
+        100% {
+            -moz-transform: translateX(-100%); /* Browser bug fix */
+            -webkit-transform: translateX(-100%); /* Browser bug fix */
+            transform: translateX(-100%);
+        }
+    }
+
+    .font__weight-semibold {
+        cursor: pointer;
+    }
+
+    .modal-dialog {
+        width: 80%;
+        max-width: none;
+        max-height: 100vh;
+    }
+
+    .bootbox .modal-dialog {
+        max-width: 450px;
+    }
+
+    .modal-content {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .modal-body {
+        max-height: calc(80vh - 100px);
+        overflow-y: auto;
+    }
+
+    #iframedoc {
+        width: 100%;
+        max-width: none;
+        height: 100vh;
+    }
+    /* affiliation Notification*/
+    .affiliation-alert {
+        background-color: #fff8dc;
+    }
+</style>
+
+<input type="hidden" id="Payableamount">
+<input type="hidden" id="NewDisciplineFees">
+<div class="content-wrapper">
+    <div class="content-header-left col-md-12 col-12">
+        <div class="row breadcrumbs-top">
+            <div class="breadcrumb-head">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item breadcrumb-text"><a href="#"><label class="Enlan" style="display: inline-block;">Dashboard</label></a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><label class="Enlan" style="display: inline-block;">View Activities</label></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="file-export ">
+        <br />
+
+        <div class="card">
+        </div>
+            <div class="row ">
+                <div class="col-12">
+                    <div class="card border-primary ">
+                        <div class="card-content collapse show">
+                            <div class="card-body">
+                                <div class="demo-section k-content wide">
+                                    <div class="col-md-12">
+                                        <!-- Icon Cards-->
+                                        <h2 class="text-center">Welcome to UUCMS</h2>
+                                    </div>
+                                    <div>
+                                    </div>
+                                    <br />
+                                        <p class="align-center">
+                                            <button type="button" class="btn btn-primary" onclick="PreviewApplicationDetails()">View My Admission Details</button>
+                                            <a href="/Login/UploadPhotoandSignature" class="btn btn-primary"> Upload My Photo and Signature </a>
+                                            <a href="/Login/UploadStudentLoginDocuments" class="btn btn-primary"> Upload Documents </a>
+                                            <a href="/Admission/StudentAdmissionStatusUpdatesView" class="btn btn-primary"> Admission Updates </a>
+                                            <a href="/Admission/ApplyForHonorsAdmission" class="btn btn-primary"> Apply For Honours </a>
+                                        </p>
+                                        <br />
+                                        <br />
+                                        <marquee direction="left" height="80%" scrollamount="3">
+                                            <table id="dvNotificationList">
+                                                <tr id="trNotificationList">
+                                                </tr>
+                                            </table>
+                                        </marquee>
+                                                                    </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="MajorDisciplineSaveStatusModel" role="dialog" data-bs-backdrop="static">
+                <div class="modal-dialog modal-xl" style="width: 60%; margin: 30px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h4 class="modal-title MJDisStat" id="MajorDisciplineSaveStatusID"></h4>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <br />
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="alert alert-primary divFees" role="alert">
+                                    <p class="align-center">
+                                        <strong>
+                                            <button type="button" class="btn btn-link font-weight-bold blink" onclick="PaySemFees()"> Click here to Pay Semester Fees (Online)</button>
+                                        </strong>
+                                        <strong>
+                                            <button type="button" class="btn btn-link font-weight-bold blink" onclick="PaySemFeesOffline()"> Click here to Pay Semester Fees (Offline)</button>
+                                        </strong>
+                                    </p>
+                                </div>
+                                <span style="color:red">Note: Once Online payment is initiated, please wait for 31 mins before attempting Online payment again. Please refresh the page after 31 mins to re-attempt <b>Online payment.</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="MajorDisciplineSelection" role="dialog" data-bs-backdrop="static">
+                <div class="modal-dialog modal-xl" style="width: 60%; margin: 30px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header d-flex justify-content-center">
+                                <h4 class="modal-title">Major Discipline Selection</h4>
+                        </div>
+                        <br />
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                        <label><b>Major Type</b><span class="danger-text">*</span>:</label>
+                                    <select class="form-control" disabled="true" id="MajorTypeID" name="MajorTypeID"><option value="">--Select--</option>
+</select>
+                                </div>
+                                <div class="col-md-4 form-group" id="DC1Div">
+                                        <label><b>Major Discipline 1</b><span class="danger-text">*</span>:</label>
+                                    <select class="form-control" id="DC1ID" name="DC1ID"><option value="">--Select--</option>
+</select>
+                                </div>
+                                <div class="col-md-4 form-group" id="DC2Div">
+                                    <label><b>Major Discipline 2</b><span class="danger-text">*</span>:</label>
+                                    <select class="form-control" id="DC2ID" name="DC2ID"><option value="">--Select--</option>
+</select>
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 form-group">
+                                    <input class="form-check-input" type="checkbox" id="SingleMajorcheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                            <b>I want to select the single major as I am aware of the pros and cons.</b>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group d-flex justify-content-center">
+                                    <input type="button" value="Submit" class="btn btn-info mt-2" onclick="submitMajorDisciplinedata()">
+                                    <button type="button" class="btn btn-danger mt-2 ml-2" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="DOBChangeModal" role="dialog">
+                <div class="modal-dialog modal-xl" style="width: 40%; margin: 30px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header">
+                            <h6 class="modal-title">Update your Date of Birth</h6>
+                        </div>
+                        <br />
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <b><label> Date of Birth<span class="danger-text">*</span>:</label></b>
+                                        <input type="text" class="form-control" id="dob" placeholder="Click to Select Date of Birth" autocomplete="off" onkeydown="return false" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <br />
+                                    <input type="button" value="Submit" class="btn btn-info mt-2" onclick="submitstudentdata(1)">
+                                    <button type="button" class="btn btn-danger mt-2 ml-2" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="MajorDisPopUpMessage" role="dialog" data-bs-backdrop="static">
+                <div class="modal-dialog modal-xl" style="width: 40%; margin: 60px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div>
+                                    <h6 class="modal-title">Major Discipline Selection Not Done, Please Contact College Admin</h6>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="button" value="OK" class="btn btn-info mt-2" onclick="Logout()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="AadhaarValidationMessageModel" role="dialog" data-bs-backdrop="static">
+                <div class="modal-dialog modal-xl" style="width: 40%; margin: 60px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-center">
+                                    <h6 class="modal-title">Aadhaar validation is mandatory, please validate aadhaar</h6>
+                                </div>
+                                <br />
+                                <div class="col-md-12 d-flex justify-content-center mt-2">
+                                    <input type="button" value="OK" class="btn btn-info mt-2" onclick="GotoManageProfile()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="PhotoSignExtensionMessageModel" role="dialog" data-bs-backdrop="static">
+                <div class="modal-dialog modal-xl" style="width: 50%; margin: 60px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-center">
+                                    <h6 class="modal-title">Photo and Signature file must be in jpg/jpeg/png format, kindly upload again</h6>
+                                </div>
+                                <br />
+                                <div class="col-md-12 d-flex justify-content-center mt-2">
+                                    <input type="button" value="OK" class="btn btn-info mt-2" onclick="UploadPhotoSignature()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="GenderChangeModal" role="dialog">
+                <div class="modal-dialog modal-xl" style="width: 40%; margin: 30px auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header">
+                            <h6 class="modal-title">Update your Gender</h6>
+                        </div>
+                        <br />
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <b><label> Gender<span class="danger-text">*</span>:</label></b>
+
+                                        <select name="GenderID" id="GenderID" class="form-control">
+                                            <option value="0">--Select--</option>
+                                            <option value="2">Female</option>
+                                            <option value="1">Male</option>
+                                            <option value="3">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <br />
+                                    <input type="button" value="Submit" class="btn btn-info mt-2" onclick="submitstudentdata(2)">
+                                    <button type="button" class="btn btn-danger mt-2 ml-2" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade font" id="Discipline_Change" role="dialog">
+                <div class="modal-dialog modal-xl" style="width: auto; margin:auto; padding: 2px;">
+                    <div class="modal-content" style="padding:15px;">
+                        <div class="modal-header">
+                            <center>
+                                <h5 class="mt-2 mb-2 details-section-heading">Discipline Change Payment Details </h5>
+                            </center>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-bordered bordered-table mt-3" id="abcde">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Sl. No</th>
+                                                <th scope="col">Old Discipline Name</th>
+                                                <th scope="col">New Discipline Name</th>
+                                                <th scope="col">New Discipline Fees</th>
+                                                <th scope="col">Paid Amount</th>
+                                                <th scope="col">Remaining Payable/Refundable Amount</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <span style="color:red"><b>Note : For Any Fees Differences or  Regarding Refundable Amount Please Contact Your University.</b></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-md-1 ml-2">
+                <button type="button" class="btn btn-primary mt-3" id="flowChart" style="display:none; margin-bottom:20px">Flowbits</button>
+            </div>
+            <div class="modal fade" id="flowChartModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Work Flow Diagrams</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row col-md-3 ml-2" style="display:none" id="roles">
+                                <b><label>Flowbits<span class="danger-text">*</span> : </label></b>
+                                <select id="rolesdropdown" class="form-control">  </select>
+                            </div>
+                            <div>
+                                <iframe id="iframedoc" src=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+<link href="/Content/loader.css" rel="stylesheet" />
+
+    </main>
+    <section id="con" class="footer" style="background-color:#07294d; padding: 1px 0px 1px 0px; margin: 10px 0px 0px 0px;">
+        <div class="container-fluid">
+            <div class="col-md-12">
+
+                <div class="disclaimer">
+
+                    <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Disclaimer:</span>Please note this page also provides links to websites/web pages of Govt. Ministries/Departments/Organisations.The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion. This application is best viewed and fully supported on web-based platforms using the latest version of Google Chrome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="con" class="footer-tollnumber" style="background-color:#07294d; padding: 1px 0px 1px 0px">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="disclaimer">
+                        <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Technical Help Desk Number :</span>080-24411500(10AM-5.30PM)</p>
+                        <h6 class="text-white text-center mt-1 pb-1" style="font-size:12px;"><span class="disclaimer">Email:</span> uucms.helpdesk@karnataka.gov.in</h6>
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="disclaimer">
+                                <p class="text-white text-center mt-1" style="font-size:12px;">
+                                    <span class="disclaimer">For Payment Related Queries, please contact :</span>+91-022-24994200, +91-022-49142595 <span class="disclaimer">Email:</span> info_ndml@ndml.in
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="disclaimer">
+                                <p class="text-white text-center mt-1" style="font-size:12px;">
+                                    <span class="disclaimer"> Bhashini Disclaimer :</span> <a style="color:white" href="https://bhashini.gov.in/gyankosh?tab=terms-of-use&fromFooter=true" target="_blank">Legal & Policies - Terms of Use</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="copyright-section">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p style="font-size:12px;"> Copyright &copy; 2021 all rights reserved. Designed &amp; Developed by Centre for Smart Governance (V_ADM_4.10_A1.7_E_0.3)<span style="color:#fff">S9</span></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="/Scripts/jquery-dropdown-datepicker.min.js"></script>
+
+    <script src="/Scripts/select2.min.js"></script>
+
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/bootstrap-multiselect-1.1.2.min.js"></script>
+    <script src="/Scripts/bootbox.min.js"></script>
+    <script src="/Scripts/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/dataTables.js"></script>
+    <script src="/Scripts/dataTables.buttons.js"></script>
+    <script src="/Scripts/buttons.dataTables.js"></script>
+    <script src="/Scripts/jszip.min.js"></script>
+    <script src="/Scripts/pdfmake.min.js"></script>
+    <script src="/Scripts/vfs_fonts.js"></script>
+    <script src="/Scripts/buttons.html5.min.js"></script>
+    <script src="/Scripts/buttons.print.min.js"></script>
+    <script src="/Scripts/dataTables.bootstrap5.3.min.js"></script>
+    <script src="/Scripts/dataTables.fixedHeader.min.js"></script>
+
+    <script src="/Scripts/common.js"></script>
+    <script src="/Scripts/XSS-validation-0.0.1.js"></script>
+    
+    <script>
+
+        function CreateViewApplication() {
+            location.replace("../Admission/GetNewApplication");
+        }
+
+        $(document).ready(function () {
+             var roleids = [2];
+
+            if (roleids.length > 1)
+            {
+                $('#flowChart').show();
+                $('#roles').show();
+
+            } else if('2' == 2 || '2' == 22 )
+            {
+                $('#flowChart').show();
+            }
+
+            const items = [
+                { role: 21, name: 'HOD-Flowbits' },
+                { role: 24, name: 'BOE-Flowbits' },
+                { role: 25, name: 'External Examiner-Flowbits' },
+                { role: 28, name: 'Co-ordinator-Flowbits' },
+
+            ];
+            const filteredItems = items.filter(item => roleids.includes(item.role));
+
+            const rolesdropdown = $('#rolesdropdown');
+            rolesdropdown.append(new Option('Select Flowbits', ''));
+            filteredItems.forEach(item => {
+                rolesdropdown.append(new Option(item.name, item.role));
+            });
+
+            rolesdropdown.change(function () {
+                const roleId = rolesdropdown.val();
+                let link = '';
+
+                if (roleId == 21) {
+                    link = '../Content/WorkFlowDiagrams/FLOWBITS_HOD_LOGIN.pdf';
+                } else if (roleId == 24) {
+                    link = '../Content/WorkFlowDiagrams/FLOWBITS_BoE_LOGIN.pdf';
+                } else if (roleId == 25) {
+                    link = '../Content/WorkFlowDiagrams/FLOWBITS_EXTERNAL_EXAMINER_LOGIN.pdf';
+                } else if (roleId == 28) {
+                    link = '../Content/WorkFlowDiagrams/FLOWBITS_COORDINATOR_LOGIN.pdf';
+                }
+
+                $('#iframedoc').attr('src', link);
+            });
+
+
+            if ("" == "Invalid") {
+                //$('.divFees').find('*').prop('disabled', true);
+                $('.divFees').find('button').remove();
+            }
+            else {
+                $('.divFees').find('*').prop('disabled', false);
+            }
+
+
+             if ("" == "True") {
+                $('#MajorDisPopUpMessage').modal('show');
+             }
+
+            if (("" == "InvalidPhotoExtension" || "" == "InvalidSignExtension") && "Production" == "Production") {
+                $('#PhotoSignExtensionMessageModel').modal('show');
+            }
+            var is_edited = 'True';
+            var is_employee_separated = 'False';
+
+            if (is_employee_separated == "True") {
+                var msg = "Employee has been De-Activated.Please contact UUCMS Administrator.";
+                bootbox.alert(msg, function () {
+
+                });
+            }
+
+            if (is_edited == "False") {
+                var msg = "Please Update Your Mobile Number & Email ID";
+                bootbox.alert(msg, function () {
+                    var url = '/studentregistration/manageprofile';
+                    window.location.href = url;
+                });
+            }
+
+            $("#App_Preview").hide();
+
+
+
+            $('#DOBChangeModal').modal('hide');
+            $('#GenderChangeModal').modal('hide');
+
+            var RoleID = '2';
+            if (RoleID == '22') {
+                var ReAdmToNEPStatus = '';
+                var ReAdmToNEPStudStatus = '';
+                var ReAdmToNEPStatusList = [187, 188, 189, 190, 191, 192, 193, 194, 195, 200];    //ReAdmission Non NEP to NEP Status ID's
+                for (var i = 0; i < ReAdmToNEPStatusList.length; i++) {
+                    if (ReAdmToNEPStatusList[i] == parseInt(ReAdmToNEPStatus) /*|| ReAdmToNEPStudStatus == 1*/) {
+                        $(".hideForReAdmToNEP").hide();
+
+                        $('a[href="/Login/OnlineStudentRegistrationForm"]').hide();
+                        $('li.drop-down').hide();
+                    }
+                }
+            }
+
+
+
+            var isBankdetailsPresent = '';
+            var Role = '2';
+            if (isBankdetailsPresent == "False" && Role == '3') {
+                var msg = "Bank Details not present. Please save Bank details to proceed further";
+                bootbox.alert(msg, function () {
+                    location.replace("../Bank/UniversityBankDetails");
+
+                });
+            }
+        });
+
+        $('#flowChart').click(function ()
+        {
+            if ('2' == 2 || '2' == 22)
+             {
+                 link = '../Content/WorkFlowDiagrams/FLOWBITS_STUDENT_LOGIN.pdf';
+                 $('#iframedoc').attr('src', link);
+             }
+            else if('2' == 22 )
+            {
+                link = '../Content/WorkFlowDiagrams/FLOWBITS_CANDIDATE_LOGIN.pdf';
+                $('#iframedoc').attr('src', link);
+            }
+
+            $('#flowChartModal').modal('show');
+        });
+
+        function dateFormat(d) {
+            console.log(d);
+            return (d.getDate() + "").padStart(2, "0")
+                + "/" + ((d.getMonth() + 1) + "").padStart(2, "0")
+                + "/" + d.getFullYear();
+        }
+
+        function PreviewApplicationDetails() {
+            var id ='1137698';
+            var regNo = 'U18ER22S0032';
+            var UniversityID = '22';
+            if (UniversityID == 12) {
+                var url = "/RegionalCenter/StudentPreviewKSOU?studAppId=" + id;
+                window.location.href = url;
+            }
+            else {
+                var url = "/MIS/PreviewStudentApplicationDetails?stud_app_id=" + id + "&registrationNo=" + regNo;
+                window.location.href = url;
+            }
+        }
+
+        function StudentDocumentsUpload() {
+            var id ='1137698';
+            var regNo ='U18ER22S0032';
+            //
+            var url = "/Login/StudentDocumentsUpload?stud_app_id=" + id + "&registrationNo=" + regNo;
+            window.location.href = url;
+        }
+
+        function PaySemFees(MajorSelection)
+        {
+            var id = '1137698';
+            var RegistrationNo = 'U18ER22S0032';
+            var SemesterID = '';
+            var Promotion_Year = '';
+            var SarID = "936115";
+            var SchemeTypeID = "1";
+            var PlmID = "2";
+            var CalenderOfEventID = 0;
+            var PurposeofPayment = 0;
+
+            if (parseInt(SemesterID) == 3) {
+                PurposeofPayment = 7;
+                CalenderOfEventID = 52;
+            }
+            else if (parseInt(SemesterID) == 5) {
+                PurposeofPayment = 34;
+                CalenderOfEventID = 56;
+            }
+            else if (parseInt(SemesterID) == 7) {
+                PurposeofPayment = 35;
+                CalenderOfEventID = 58;
+            }
+            else if (parseInt(SemesterID) == 9) {
+                PurposeofPayment = 40;
+                CalenderOfEventID = 63;
+            }
+            else if (parseInt(SemesterID) == 11) {
+                PurposeofPayment = 41;
+                CalenderOfEventID = 64;
+            }
+
+            if (CalenderOfEventID == 0 || PurposeofPayment == 0) {
+                bootbox.alert("Failed");
+                return false;
+            }
+
+            if (id != "") {
+                if (SemesterID == "5" && MajorSelection == true && PlmID == "2") {
+                    $.ajax({
+                        url: "/Login/SaveMajorDisciplineDetails",
+                        type: "POST",
+                        data: {
+                            MajorTypeID: 0,
+                            SarID: SarID,
+                            SchemeTypeID: SchemeTypeID,
+                            DisoneID: 0,
+                            DistwoID: 0
+                        },
+                        success: function (data) {
+                        }
+                    });
+                }
+                if (parseInt(SemesterID) > 0 && PurposeofPayment > 0) {
+                    $.ajax({
+                        type: "GET",
+                        url: "/CollegeAdmin/VerifyAdmissionDate",
+                        data: { ApplicationID: id, CalenderOfEventID: CalenderOfEventID },
+                        async: false,
+                        success: function (result) {
+                            if (result.ValidationType == 1) {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/Admission/GetNSDLCollegeStatus",
+                                    data: { college_id: 0, ProgramlevelID: 0, ApplicationID: 0, Priority: 0, Registration_id: id },
+                                    success: function (data) {
+
+                                        if (data == "UniversityFeesetupNull") {
+                                            bootbox.alert("Semester wise Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "CollegeFeesetupNull") {
+                                            bootbox.alert("Semester wise  Fee has not been set up by College, please contact College.");
+                                        }
+                                        else if (data == "UniversityNSDLsetupNull") {
+                                            bootbox.alert("This University is not available for online payment, please contact University.");
+                                        }
+                                        else if (data == "COllegeNSDLsetupNull") {
+                                            bootbox.alert("This College is not available for online payment, please contact College.");
+                                        }
+                                        else if (data == "UniversityCollegeFeesetupZero") {
+                                            bootbox.alert("Semester wise  Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "UniversityFeesetupZero") {
+                                            bootbox.alert("Semester wise  Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "UniversityCollegeFeesetupNull") {
+                                            bootbox.alert("Semester wise  Fee has not been set up by University and College, please contact University and college.");
+                                        }
+                                        else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                                            bootbox.alert("Semester wise  Fee has not been set up by University and College, please contact University and college.");
+                                        }
+                                        else if (data == "MajorDC1_Uni_Fee") {
+                                            bootbox.alert("Discipline 1 Major Selection Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "MajorDC2_Uni_Fee") {
+                                            bootbox.alert("Discipline 2 Major Selection Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "MajorDC1_College_Fee") {
+                                            bootbox.alert("Discipline 1 Major Selection Fee has not been set up by College, please contact College.");
+                                        }
+                                        else if (data == "MajorDC2_College_Fee") {
+                                            bootbox.alert("Discipline 2 Major Selection Fee has not been set up by College, please contact College.");
+                                        }
+                                        else {
+                                            bootbox.confirm({
+                                                title: "Confirm",
+                                                closeButton: false,
+                                                message: ("Are you Sure you want to Pay Semester Fees?"),
+                                                buttons: {
+                                                    confirm: {
+                                                        label: 'Yes',
+                                                        className: 'btn-success'
+                                                    },
+                                                    cancel: {
+                                                        label: 'No',
+                                                        className: 'btn-danger'
+                                                    }
+                                                },
+                                                closeButton: false,
+                                                callback: function (result) {
+
+                                                    if (result == true) {
+                                                        var url = "/Admission/PayOnline?Id=" + id + "&PurposeofPayment=" + PurposeofPayment + "";
+                                                        window.location.href = url;
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    }
+                                });
+                            }
+                            else if (result.ValidationType == 6) {
+                                var msg = result.ValidationMessage;
+                                bootbox.confirm({
+                                    message: msg,
+                                    buttons: {
+                                        confirm: {
+                                            label: 'Yes',
+                                            className: 'btn-success'
+                                        },
+                                        cancel: {
+                                            label: 'No',
+                                            className: 'btn-danger'
+                                        }
+                                    },
+                                    callback: function (result) {
+                                        if (result == true) {
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "/Admission/GetNSDLCollegeStatus",
+                                                data: { college_id: 0, ProgramlevelID: 0, ApplicationID: 0, Priority: 0, Registration_id: id },
+                                                success: function (data) {
+
+                                                    if (data == "UniversityFeesetupNull") {
+                                                        bootbox.alert("Semester wise Fee has not been set up by University, please contact University.");
+                                                    }
+                                                    else if (data == "CollegeFeesetupNull") {
+                                                        bootbox.alert("Semester wise  Fee has not been set up by College, please contact College.");
+                                                    }
+                                                    else if (data == "UniversityNSDLsetupNull") {
+                                                        bootbox.alert("This University is not available for online payment, please contact University.");
+                                                    }
+                                                    else if (data == "COllegeNSDLsetupNull") {
+                                                        bootbox.alert("This College is not available for online payment, please contact College.");
+                                                    }
+                                                    else if (data == "UniversityCollegeFeesetupZero") {
+                                                        bootbox.alert("Semester wise  Fee has not been set up by University, please contact University.");
+                                                    }
+                                                    else if (data == "UniversityFeesetupZero") {
+                                                        bootbox.alert("Semester wise  Fee has not been set up by University, please contact University.");
+                                                    }
+                                                    else if (data == "UniversityCollegeFeesetupNull") {
+                                                        bootbox.alert("Semester wise  Fee has not been set up by University and College, please contact University and college.");
+                                                    }
+                                                    else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                                                        bootbox.alert("Semester wise  Fee has not been set up by University and College, please contact University and college.");
+                                                    }
+                                                    else if (data == "MajorDC1_Uni_Fee") {
+                                                        bootbox.alert("Discipline 1 Major Selection Fee has not been set up by University, please contact University.");
+                                                    }
+                                                    else if (data == "MajorDC2_Uni_Fee") {
+                                                        bootbox.alert("Discipline 2 Major Selection Fee has not been set up by University, please contact University.");
+                                                    }
+                                                    else if (data == "MajorDC1_College_Fee") {
+                                                        bootbox.alert("Discipline 1 Major Selection Fee has not been set up by College, please contact College.");
+                                                    }
+                                                    else if (data == "MajorDC2_College_Fee") {
+                                                        bootbox.alert("Discipline 2 Major Selection Fee has not been set up by College, please contact College.");
+                                                    }
+                                                    else {
+                                                        bootbox.confirm({
+                                                            title: "Confirm",
+                                                            closeButton: false,
+                                                            message: ("Are you Sure you want to Pay Semester Fees?"),
+                                                            buttons: {
+                                                                confirm: {
+                                                                    label: 'Yes',
+                                                                    className: 'btn-success'
+                                                                },
+                                                                cancel: {
+                                                                    label: 'No',
+                                                                    className: 'btn-danger'
+                                                                }
+                                                            },
+                                                            closeButton: false,
+                                                            callback: function (result) {
+
+                                                                if (result == true) {
+                                                                    var url = "/Admission/PayOnline?Id=" + id + "&PurposeofPayment=" + PurposeofPayment + "";
+                                                                    window.location.href = url;
+                                                                }
+                                                            }
+                                                        });
+                                                    }
+                                                }
+                                            });
+                                        } else {
+                                        }
+                                    }
+                                });
+                            }
+                            else {
+                                bootbox.alert(result.ValidationMessage);
+                            }
+                        }
+                    });
+                }
+                else if (parseInt(SemesterID) == 99) {
+
+                    //99 - No Record exist in the promotion table.
+                    var BBMsg = "Please inform College to Re-Initiate Promotion";
+                    bootbox.alert(BBMsg, function () {
+                        $.ajax({
+                            url: "/Login/ResetPromotionStatus",
+                            type: "POST",
+                            success: function (data) {
+                                if (data == "Success") {
+                                    window.location.reload();
+                                }
+                                else {
+                                    bootbox.alert("Payment Failed.");
+                                    return false;
+                                }
+                            }
+                        });
+                    });
+                    return false;
+                }
+                else {
+                    bootbox.alert("Payment Failed.");
+                    return false;
+                }
+            }
+        }
+
+        function PaySemFeesOffline(MajorSelection)
+        {
+            var id = '1137698';
+            var SemesterID = '';
+            var Promotion_Year = '';
+            var RegistrationNo = 'U18ER22S0032';
+            var SarID = "936115";
+            var SchemeTypeID = "1";
+            var PlmID = "2";
+
+            var CalenderOfEventID = 0;
+
+            if (parseInt(SemesterID) == 3) {
+                CalenderOfEventID = 52;
+            }
+            else if (parseInt(SemesterID) == 5) {
+                CalenderOfEventID = 56;
+            }
+            else if (parseInt(SemesterID) == 7) {
+                CalenderOfEventID = 58;
+            }
+            else if (parseInt(SemesterID) == 9) {
+                PurposeofPayment = 40;
+                CalenderOfEventID = 63;
+            }
+            else if (parseInt(SemesterID) == 11) {
+                PurposeofPayment = 41;
+                CalenderOfEventID = 64;
+            }
+
+            if (CalenderOfEventID == 0) {
+                bootbox.alert("Failed");
+                return false;
+            }
+
+            if (id != "") {
+                if (SemesterID == "5" && MajorSelection == true && PlmID == "2") {
+                    $.ajax({
+                        url: "/Login/SaveMajorDisciplineDetails",
+                        type: "POST",
+                        data: {
+                            MajorTypeID: 0,
+                            SarID: SarID,
+                            SchemeTypeID: SchemeTypeID,
+                            DisoneID: 0,
+                            DistwoID: 0
+                        },
+                        success: function (data) {
+                        }
+                    });
+                }
+                if (parseInt(SemesterID) > 0 && parseInt(SemesterID) != 99) {
+                    $.ajax({
+                        type: "GET",
+                        url: "/CollegeAdmin/VerifyAdmissionDate",
+                        data: { ApplicationID: id, CalenderOfEventID: CalenderOfEventID },
+                        async: false,
+                        success: function (result) {
+                            if (result.ValidationType == 1) {
+                                bootbox.confirm({
+                                    title: "Confirm",
+                                    closeButton: false,
+                                    message: ("Are you Sure you want to Pay Semester Fees?"),
+                                    buttons: {
+                                        confirm: {
+                                            label: 'Yes',
+                                            className: 'btn-success'
+                                        },
+                                        cancel: {
+                                            label: 'No',
+                                            className: 'btn-danger'
+                                        }
+                                    },
+                                    closeButton: false,
+                                    callback: function (result) {
+
+                                        if (result == true) {
+                                            PostMethodForSemesterOfflinePayment(id, SemesterID);
+                                        }
+                                    }
+                                });
+                            }
+                            else if (result.ValidationType == 6) {
+                                var msg = result.ValidationMessage;
+                                bootbox.confirm({
+                                    message: msg,
+                                    buttons: {
+                                        confirm: {
+                                            label: 'Yes',
+                                            className: 'btn-success'
+                                        },
+                                        cancel: {
+                                            label: 'No',
+                                            className: 'btn-danger'
+                                        }
+                                    },
+                                    callback: function (result) {
+                                        if (result == true) {
+                                            bootbox.confirm({
+                                                title: "Confirm",
+                                                closeButton: false,
+                                                message: ("Are you Sure you want to Pay Semester Fees?"),
+                                                buttons: {
+                                                    confirm: {
+                                                        label: 'Yes',
+                                                        className: 'btn-success'
+                                                    },
+                                                    cancel: {
+                                                        label: 'No',
+                                                        className: 'btn-danger'
+                                                    }
+                                                },
+                                                closeButton: false,
+                                                callback: function (result) {
+                                                    if (result == true) {
+                                                        PostMethodForSemesterOfflinePayment(id, SemesterID);
+                                                    }
+                                                }
+                                            });
+                                        } else {
+                                        }
+                                    }
+                                });
+                            }
+                            else {
+                                bootbox.alert(result.ValidationMessage);
+                            }
+                        }
+                    });
+                }
+                else if (parseInt(SemesterID) == 99) {
+                    //99 - No Record exist in the promotion table.
+                    var BBMsg = "Please inform College to Re-Initiate Promotion";
+                    bootbox.alert(BBMsg, function () {
+                        $.ajax({
+                            url: "/Login/ResetPromotionStatus",
+                            type: "POST",
+                            success: function (data) {
+                                if (data == "Success") {
+                                    window.location.reload();
+                                }
+                                else {
+                                    bootbox.alert("Payment Failed.");
+                                    return false;
+                                }
+                            }
+                        });
+                    });
+                    return false;
+                }
+                else {
+                    bootbox.alert("Payment Failed.");
+                    return false;
+                }
+            }
+        }
+
+        function PostMethodForSemesterOfflinePayment(StudAppID, SemesterID) {
+            var form = document.createElement("form");
+            form.method = "POST";
+            form.action = "/Admission/UploadFeePaidDetails";
+
+            var fields = {
+                StudAppID: StudAppID,
+                SemesterID: SemesterID
+            };
+
+            for (var key in fields) {
+                if (fields.hasOwnProperty(key)) {
+                    var input = document.createElement("input");
+                    input.type = "hidden";
+                    input.name = key;
+                    input.value = fields[key];
+                    form.appendChild(input);
+                }
+            }
+
+            document.body.appendChild(form);
+            form.submit();
+        }
+
+        function UpdateDateOfBirth() {
+            $('#dob').val('');
+            $('#DOBChangeModal').modal('show');
+        }
+
+        function UpdateGender() {
+            $('#GenderID').val("0");
+            $('#GenderChangeModal').modal('show');
+        }
+
+        $('#dob').dropdownDatepicker({
+            minAge: 15,
+            maxAge: 90,
+            defaultDateFormat: 'dd-mm-yyyy',
+            displayFormat: 'ymd',
+            submitFormat: 'dd-mm-yyyy',
+            daySuffixValues: ['', '', '', '']
+        });
+
+        function submitstudentdata(savetype)
+        {
+            if (savetype == 1)
+            {
+                // Update Date of Birth
+                if ($('#dob').val() == null || $('#dob').val() == "")
+                {
+                    bootbox.alert("Please enter your date of birth");
+                    return false;
+                }
+                var DateofBirthString = $('#dob').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/Login/UpdateStudentDetails",
+
+                    data: {
+                        DateofBirthString: DateofBirthString,
+                        savetype: savetype
+                    },
+                    async: false,
+                    success: function (data) {
+                        if (data == "Success") {
+                            var msg = "Date of Birth updated successfully";
+                            $('#DOBChangeModal').modal('hide');
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                        else {
+                            var msg = "Oops! something went wrong";
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                    }
+                });
+
+            }
+            else if (savetype == 2)
+            {
+                // Update Gender
+                if ($('#GenderID').val() == null || $('#GenderID').val() == "" || $('#GenderID').val() == 0)
+                {
+                    bootbox.alert("Please select your gender");
+                    return false;
+                }
+
+                var GenderID = $('#GenderID').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/Login/UpdateStudentDetails",
+
+                    data: {
+                        GenderID: GenderID,
+                        savetype: savetype
+                    },
+
+                    async: false,
+                    success: function (data) {
+                        if (data == "Success") {
+                            var msg = "Gender updated successfully";
+                            $('#GenderChangeModal').modal('hide');
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                        else {
+                            var msg = "Oops! something went wrong";
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                    }
+                });
+
+            }
+
+        }
+
+        //sss module start
+        var id = '1137698';
+
+        if (id != null && id != "" && id != 0) {
+            SSS_CheckSSPDid();
+            GetSSS_studentNotfication();
+        }
+
+        function GetSSS_studentNotfication() {
+            $.ajax({
+                type: "GET",
+                url: "/BulletinAndNotifications/StudentNotifications",
+                aysnc: false,
+                //dataType: "json",
+                data: {
+                    PageName: "Hori",
+                },
+                success: function (data) {
+                    var notiListHtml = "";
+                    $.each(data, function () {
+                        var item = this;
+                        var content = "";
+                        var subject = "";
+                        //var notiid = item.sbn_notification_id;
+                        //subject = item.sbn_subject;
+                        //if (item.sbn_notification_content != null) {
+                        //    content = item.sbn_notification_content;
+                        //}
+                        var notiid = item.NotificationId;
+                        subject = item.Subject;
+                        if (item.NotificationContent != null) {
+                            content = item.NotificationContent;
+                        }
+                        notiListHtml += "<td><div  class='col-sm-12' onclick='OpenNotification(" + notiid + ")'><div class='alert fade alert-simple alert-success alert-dismissible text-start font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show'><i class='start-icon far fa-check-circle faa-tada animated' ></i ><strong class='font__weight-semibold'> " + subject + ": </strong> " + content+"</div ></div></td>";
+                    });
+                    $("#trNotificationList").append(notiListHtml);
+                },
+                failure: function (response) {
+                    bootbox.alert(response);
+                },
+                error: function (response) {
+                    bootbox.alert(response);
+                }
+            });
+        }// close GetSSS_studentNotfication
+
+        function OpenNotification(OpenNotification) {
+            window.open('/BulletinAndNotifications/EditNotification?iNotiID=' +OpenNotification+'&iIsOverView=1', '_self');
+        }
+
+        function SSS_CheckSSPDid() {
+            $.ajax({
+                type: "Post",
+                url: "/StudentProfile/GetSSPDid",
+                aysnc: false,
+                success: function (data) {
+                },
+                failure: function (response) {
+                },
+                error: function (response) {
+                }
+            });
+        }
+
+        function Discipline_Change() {
+
+            var id = '1137698';
+
+            var CSApproved = false;
+            $.ajax({
+                type: "POST",
+                url: "/CollegeAdmin/GetCourseRegCountForDisciplineEdit",
+                async: false,
+                data: {
+                    stud_app_id: id,
+                },
+                success: function (data) {
+                    if (data != null) {
+                        if (data == "0") {
+                            CSApproved = false;
+                        } else {
+                            CSApproved = true;
+                        }
+                    }
+
+                }
+            });
+            if (CSApproved == true) {
+                var msg = "Course registration has been approved, please delete the course registration to change the discipline.";
+                bootbox.alert(msg, function () {
+
+                    window.location.reload();
+                });
+            }
+            else {
+                $('#Discipline_Change').modal('show');
+                Discipline_Change_Payment_Details();
+            }
+        }
+
+        function Discipline_Change_offline_Payment() {
+             var id = '1137698';
+
+            var CSApproved = false;
+            $.ajax({
+                type: "POST",
+                url: "/CollegeAdmin/GetCourseRegCountForDisciplineEdit",
+                async: false,
+                data: {
+                    stud_app_id: id,
+                },
+                success: function (data) {
+                    if (data != null) {
+                        if (data == "0") {
+                            CSApproved = false;
+                        } else {
+                            CSApproved = true;
+                        }
+                    }
+
+                }
+            });
+            if (CSApproved == true) {
+                var msg = "Course registration has been approved, please delete the course registration to change the discipline.";
+                bootbox.alert(msg, function () {
+
+                    window.location.reload();
+                });
+            }
+            else {
+                $('#Discipline_Change').modal('show');
+                Discipline_Change_offline_Payment_Details();
+            }
+        }
+
+        function Discipline_Change_Payment_Details() {
+            var Registration_id = '1137698';
+            $.ajax({
+                type: "POST",
+                url: "/Admission/GetDisciplineChangePaymentDetails",
+                data: { Registration_id: Registration_id},
+                success: function (data) {
+                    var count = Object.keys(data).length;
+                    if (count > 0) {
+                        var table = $('#abcde').DataTable();
+                        table.clear();
+                        $.each(data, function (i, rows) {
+                            if (rows.PayableAmount > 0) {
+                                table.row.add([i + 1, rows.OldDisciplineName, rows.NewDisciplineName, rows.NewDisciplineFees, rows.PaidAmount, rows.PayableAmount, "<a class='btn btn-link' style='color:blue;text-decoration:underline;' id='Onlinepay' onclick='DisciplineChangeOnlinePayment()'>Pay Fees (online)</a>"]);
+                                table.draw(true);
+                                 $('#Payableamount').val(rows.PayableAmount);
+                                $('#NewDisciplineFees').val(rows.NewDisciplineFees);
+                            }
+                            else {
+                                table.row.add([i + 1, rows.OldDisciplineName, rows.NewDisciplineName, rows.NewDisciplineFees, rows.PaidAmount, rows.PayableAmount, "<a class='btn btn-link' style='color:blue;text-decoration:underline;' id='completet' onclick='CompleteDisciplineChangeRequest()'>Complete Discipline Change Request</a>"]);
+                                table.draw(true);
+                                $('#Payableamount').val(rows.PayableAmount);
+                                $('#NewDisciplineFees').val(rows.NewDisciplineFees);
+
+                            }
+
+                        });
+                    }
+                }
+            });
+        }
+
+        function Discipline_Change_offline_Payment_Details() {
+            var Registration_id = '1137698';
+            $.ajax({
+                type: "POST",
+                url: "/Admission/GetDisciplineChangePaymentDetails",
+                data: { Registration_id: Registration_id},
+                success: function (data) {
+                    var count = Object.keys(data).length;
+                    if (count > 0) {
+                        var table = $('#abcde').DataTable();
+                        table.clear();
+                        $.each(data, function (i, rows) {
+                            if (rows.PayableAmount > 0) {
+                                table.row.add([i + 1, rows.OldDisciplineName, rows.NewDisciplineName, rows.NewDisciplineFees, rows.PaidAmount, rows.PayableAmount, "<a class='btn btn-link' style='color:blue;text-decoration:underline;' id='Onlinepay' onclick='DisciplineChangeOfflinePayment()'>Pay Fees (Offline)</a>"]);
+                                table.draw(true);
+                                $('#Payableamount').val(rows.PayableAmount);
+                                $('#NewDisciplineFees').val(rows.NewDisciplineFees);
+
+                            }
+                            else {
+                                table.row.add([i + 1, rows.OldDisciplineName, rows.NewDisciplineName, rows.NewDisciplineFees, rows.PaidAmount, rows.PayableAmount, "<a class='btn btn-link' style='color:blue;text-decoration:underline;' id='completet' onclick='CompleteDisciplineChangeRequest()'>Complete Discipline Change Request</a>"]);
+                                table.draw(true);
+                                $('#Payableamount').val(rows.PayableAmount);
+                                $('#NewDisciplineFees').val(rows.NewDisciplineFees);
+
+                            }
+
+                        });
+                    }
+                }
+            });
+        }
+
+        function DisciplineChangeOnlinePayment() {
+
+            var ApplicationID = '1137698';
+            if ($('#NewDisciplineFees').val() == "0" || $('#NewDisciplineFees').val() == "" || $('#NewDisciplineFees').val() == 0 || $('#NewDisciplineFees').val() == null) {
+                bootbox.alert("New Discipline Fee has not been set up by University , please contact University.");
+                return false;
+            }
+            else {
+                var valid = 0;
+                $.ajax({
+                    url: '/CollegeAdmin/CheckAffiliationIntake',
+                    data: {
+                        StudAppID: ApplicationID,
+                        ISstudentLogin: true
+                    },
+                    type: 'GET',
+                    async: false,
+                    success: function (data) {
+
+                        if (data == "Valid") {
+                            valid = 1;
+                        }
+                        else if (data == "SeatFilled") {
+                            var msg = "Maximum seats filled for the selected Discipline.";
+                            bootbox.alert(msg, function () {
+                            });
+                        }
+                        else if (data == "IntakeNotSetup") {
+                            var msg = "Affiliation intake not setup for this Discipline.";
+                            bootbox.alert(msg, function () {
+                            });
+                        }
+                        else if (data == "BufferNotSetup") {
+                            var msg = "Buffer intake does not exist.";
+                            bootbox.alert(msg, function () {
+                            });
+                        } else {
+                            var msg = "oops something went wrong.";
+                            bootbox.alert(msg, function () {
+                            });
+                        }
+                    }, error: function (result) {
+
+                    }
+                });
+                if (valid == 1) {
+                    if ($('#NewDisciplineFees').val() == "0" || $('#NewDisciplineFees').val() == "" || $('#NewDisciplineFees').val() == 0 || $('#NewDisciplineFees').val() == null) {
+                        bootbox.alert("New Discipline Fee has not been set up by University , please contact University.");
+                        return false;
+                    }
+                    bootbox.confirm({
+                        title: "Confirm",
+                        closeButton: false,
+                        message: ("Are You Sure you want to Pay Discipline Change Fees?"),
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-success'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-danger'
+                            }
+                        },
+                        closeButton: false,
+                        callback: function (result) {
+                            if (result == true) {
+                                var PayableAmount = $('#Payableamount').val();
+                                location.replace("/Admission/PayOnline?id=" + ApplicationID + "&PurposeofPayment=29" + "&PayableAmount=" + PayableAmount);
+                            }
+                        }
+                    });
+                }
+            }
+        }
+
+        function DisciplineChangeOfflinePayment() {
+
+            var ApplicationID = '1137698';
+            if ($('#NewDisciplineFees').val() == "0" || $('#NewDisciplineFees').val() == "" || $('#NewDisciplineFees').val() == 0 || $('#NewDisciplineFees').val() == null) {
+                bootbox.alert("New Discipline Fee has not been set up by University , please contact University.");
+                return false;
+            }
+            else {
+                var valid = 0;
+                $.ajax({
+                    url: '/CollegeAdmin/CheckAffiliationIntake',
+                    data: {
+                        StudAppID: ApplicationID,
+                        ISstudentLogin: true
+                    },
+                    type: 'GET',
+                    async: false,
+                    success: function (data) {
+
+                        if (data == "Valid") {
+                            valid = 1;
+                        }
+                        else if (data == "SeatFilled") {
+                            var msg = "Maximum seats filled for the selected Discipline.";
+                            bootbox.alert(msg, function () {
+                            });
+                        }
+                        else if (data == "IntakeNotSetup") {
+                            var msg = "Affiliation intake not setup for this Discipline.";
+                            bootbox.alert(msg, function () {
+                            });
+                        }
+                        else if (data == "BufferNotSetup") {
+                            var msg = "Buffer intake does not exist.";
+                            bootbox.alert(msg, function () {
+                            });
+                        } else {
+                            var msg = "oops something went wrong.";
+                            bootbox.alert(msg, function () {
+                            });
+                        }
+                    }, error: function (result) {
+
+                    }
+                });
+                if (valid == 1) {
+                    bootbox.confirm({
+                        title: "Confirm",
+                        closeButton: false,
+                        message: ("Are You Sure you want to Pay Discipline Change Fees (offline)?"),
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-success'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-danger'
+                            }
+                        },
+                        closeButton: false,
+                        callback: function (result) {
+                            if (result == true) {
+                                var PayableAmount = $('#Payableamount').val();
+                                location.replace("/Admission/PGDisciplineChangeStudentOfflinePayment?StudAppID=" + ApplicationID + "&MsID=29");
+                            }
+                        }
+                    });
+                }
+            }
+        }
+
+        function Pay_Discipline_Change_Rejected_Payment() {
+
+         var ApplicationID = '1137698';
+            bootbox.confirm({
+                title: "Confirm",
+                closeButton: false,
+                message: ("Are You Sure you want to Pay Discipline Change Fees (offline)?"),
+                buttons: {
+                    confirm: {
+                        label: 'Yes',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: 'No',
+                        className: 'btn-danger'
+                    }
+                },
+                closeButton: false,
+                callback: function (result) {
+                    if (result == true) {
+                        var PayableAmount = $('#Payableamount').val();
+                        location.replace("/Admission/PGDisciplineChangeStudentOfflinePayment?StudAppID=" + ApplicationID + "&MsID=29");
+                    }
+                }
+            });
+        }
+
+        function CompleteDisciplineChangeRequest() {
+
+                var ApplicationID = '1137698';
+                if ($('#NewDisciplineFees').val() == "0" || $('#NewDisciplineFees').val() == "" || $('#NewDisciplineFees').val() == 0 || $('#NewDisciplineFees').val() == null) {
+                    bootbox.alert("New Discipline Fee has not been set up by University , please contact University.");
+                    return false;
+                }
+                else {
+                    var valid = 0;
+                    $.ajax({
+                        url: '/CollegeAdmin/CheckAffiliationIntake',
+                        data: {
+                            StudAppID: ApplicationID,
+                            ISstudentLogin: true
+                        },
+                        type: 'GET',
+                        async: false,
+                        success: function (data) {
+
+                            if (data == "Valid") {
+                                valid = 1;
+                            }
+                            else if (data == "SeatFilled") {
+                                var msg = "Maximum seats filled for the selected Discipline.";
+                                bootbox.alert(msg, function () {
+                                });
+                            }
+                            else if (data == "IntakeNotSetup") {
+                                var msg = "Affiliation intake not setup for this Discipline.";
+                                bootbox.alert(msg, function () {
+                                });
+                            }
+                            else if (data == "BufferNotSetup") {
+                                var msg = "Buffer intake does not exist.";
+                                bootbox.alert(msg, function () {
+                                });
+                            } else {
+                                var msg = "oops something went wrong.";
+                                bootbox.alert(msg, function () {
+                                });
+                            }
+                        }, error: function (result) {
+
+                        }
+                    });
+                    if (valid == 1) {
+                        bootbox.confirm({
+                            title: "Confirm",
+                            closeButton: false,
+                            message: ("Are You Sure you want to Complete Your Discipline Change Request?"),
+                            buttons: {
+                                confirm: {
+                                    label: 'Yes',
+                                    className: 'btn-success'
+                                },
+                                cancel: {
+                                    label: 'No',
+                                    className: 'btn-danger'
+                                }
+                            },
+                            closeButton: false,
+                            callback: function (result) {
+                                if (result == true) {
+                                    $.ajax({
+                                        url: '/Admission/CompleteDisciplineChangeRequest',
+                                        data: {
+                                            Pss_id: 0,
+                                            AppID: ApplicationID,
+                                            Status: 1,
+                                        },
+                                        method: 'Post',
+                                        success: function (result) {
+
+                                            if (result != "Rejected") {
+                                                var msg = "Discipline Changed Successfully, New Registration Number is " + result + "";
+                                                bootbox.alert(msg, function () {
+                                                    window.location.reload();
+                                                });
+                                            }
+                                            else {
+                                                var msg = "Oops Something Went Wrong,Please Try After Sometime.";
+                                                bootbox.alert(msg, function () {
+                                                    window.location.reload();
+                                                });
+                                            }
+                                        },
+                                        error: function (jqXHR, textStatus) {
+                                            bootbox.alert("Error!! while sending data.");
+                                        }
+                                    });
+                                }
+                            }
+                        });
+                    } }
+        }
+
+        function MajorDisModelShow() {
+            $('#DC1ID').val("");
+            $('#DC2ID').val("");
+            var SarID = "936115";
+            var SchemeTypeID = "1";
+            if (parseInt(SchemeTypeID) == 1) {
+                $('#MajorTypeID').val("2");
+                $('#DC2Div').show();
+                $('#SingleMajorcheck').prop('checked', false);
+                $('#MajorDisciplineSelection').modal('show');
+            }
+            else if (parseInt(SchemeTypeID) == 3) {
+                $('#MajorTypeID').val("1");
+                $('#DC2Div').hide();
+                $.ajax({
+                    type: "POST",
+                    url: "/Login/GetDiciplinesForMajorSelection",
+                    data: { SarID: SarID, SchemeTypeID: SchemeTypeID, MajorTypeID: 1 },
+                    success: function (data) {
+                        $("#DC1ID").empty();
+                        if (data.length > 0) {
+                            $.each(data, function (index, item) {
+                                $("#DC1ID").append($("<option></option>").val(item.Value).html(item.Text));
+                            });
+                        }
+                    }
+                });
+                $('#SingleMajorcheck').prop('checked', false);
+                $('#MajorDisciplineSelection').modal('show');
+            }
+        }
+
+        function submitMajorDisciplinedata() {
+            var SarID = "936115";
+            var SchemeTypeID = "1";
+            var MajorTypeID = $('#MajorTypeID').val();
+            var DC1ID = $('#DC1ID').val();
+            var DC2ID = $('#DC2ID').val();
+            if (MajorTypeID == "") {
+                bootbox.alert("Please select major type");
+                return false;
+            }
+            if (DC1ID == "") {
+                if (parseInt(SchemeTypeID) == 1) {
+                    bootbox.alert("Please select Major Discipline One");
+                }
+                else {
+                    bootbox.alert("Please select Specialization.");
+                }
+                return false;
+            }
+            if (parseInt(SchemeTypeID) == 1 && MajorTypeID == "2" && DC2ID == "") {
+                bootbox.alert("Please select Major Discipline Two");
+                return false;
+            }
+            if (parseInt(SchemeTypeID) == 1 && MajorTypeID == "2" && DC2ID == DC1ID) {
+                bootbox.alert("Discipline One and Discipline Two cannot be same");
+                return false;
+            }
+            $.ajax({
+                url: "/Login/SaveMajorDisciplineDetails",
+                type: "POST",
+                data: {
+                    MajorTypeID: MajorTypeID,
+                    SchemeTypeID: SchemeTypeID,
+                    SarID: SarID,
+                    DisoneID: DC1ID,
+                    DistwoID: DC2ID
+                },
+                success: function (data) {
+
+                    //$('#MajorTypeID').val("");
+                    $('#DC1ID').val("");
+                    $('#DC2ID').val("");
+                    if (data == "Success") {
+                        $('#MajorDisciplineSelection').modal('hide');
+                        $("h4.MJDisStat").text("Data Saved Successfully, Please pay semester fee.")
+                        $('#MajorDisciplineSaveStatusModel').modal('show');
+                    }
+                }
+            });
+        }
+
+        function ReAdmission_Online_Payment()
+        {
+            var id = '1137698';
+            if (id != "") {
+
+                var FeesValid = true;
+                $.ajax({
+                    type: "POST",
+                    url: "/Admission/GetReAdmissionFeesSetupStatus",
+                    data: { StudAppID: id },
+                    aysnc:false,
+                    success: function (data) {
+
+                        if (data == "Proceed") {
+                            FeesValid = true;
+
+                            $.ajax({
+                                type: "POST",
+                                url: "/Admission/GetNSDLCollegeStatus",
+                                data: { college_id: 0, ProgramlevelID: 0, ApplicationID: 0, Priority: 0, Registration_id: id },
+                                aysnc: false,
+                                success: function (data) {
+
+                                    if (data == "UniversityFeesetupNull") {
+                                        bootbox.alert("Fee has not been set up by University, please contact University.");
+                                    }
+                                    else if (data == "CollegeFeesetupNull") {
+                                        bootbox.alert("Fee has not been set up by College, please contact College.");
+                                    }
+                                    else if (data == "UniversityNSDLsetupNull") {
+                                        bootbox.alert("This University is not available for online payment, please contact University.");
+                                    }
+                                    else if (data == "COllegeNSDLsetupNull") {
+                                        bootbox.alert("This College is not available for online payment, please contact College.");
+                                    }
+                                    else if (data == "UniversityCollegeFeesetupZero") {
+                                        bootbox.alert("Fee has not been set up by University, please contact University.");
+                                    }
+                                    else if (data == "UniversityFeesetupZero") {
+                                        bootbox.alert("Fee has not been set up by University, please contact University.");
+                                    }
+                                    else if (data == "UniversityCollegeFeesetupNull") {
+                                        bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                                    }
+                                    else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                                        bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                                    }
+                                    else {
+                                        bootbox.confirm({
+                                            title: "Confirm",
+                                            closeButton: false,
+                                            message: ("Are you Sure you want to Pay Re-Admission Fees?"),
+                                            buttons: {
+                                                confirm: {
+                                                    label: 'Yes',
+                                                    className: 'btn-success'
+                                                },
+                                                cancel: {
+                                                    label: 'No',
+                                                    className: 'btn-danger'
+                                                }
+                                            },
+                                            closeButton: false,
+                                            callback: function (result) {
+
+                                                if (result == true) {
+                                                    var url = "/Admission/PayOnline?Id=" + id + "&PurposeofPayment=33";
+                                                    window.location.href = url;
+                                                }
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+
+                        }
+                        else if (data == "UNINotSetupFees") {
+                            bootbox.alert("Fee has not been set up by University, Please contact University.");
+                            FeesValid = false;
+                        }
+                        else if (data == "UNINotSetupIncomeLimit" || data == "UNINotSetupGeneralIncomeLimit") {
+                            bootbox.alert("University has not setup Income limit. Please contact University.");
+                            FeesValid = false;
+                        }
+                        else if (data == "UNINotSetupGeneralFees" ) {
+                            bootbox.alert("University has not setup Fees. Please contact University.");
+                            FeesValid = false;
+                        }
+
+                        else if (data == "CLGNotSetupFees") {
+                            bootbox.alert("Fee has not been set up by College, Please contact College.");
+                            FeesValid = false;
+                        }
+                        else if (data == "CLGNotSetupIncomeLimit" || data == "ClgNotSetupGeneralIncomeLimit") {
+                            bootbox.alert("College has not setup Income limit. Please contact College.");
+                            FeesValid = false;
+                        }
+                        else if (data == "ClgNotSetupGeneralFees") {
+                            bootbox.alert("College has not setup Fees. Please contact College.");
+                            FeesValid = false;
+                        }
+                        else if (data == "QuotaTypeNotSet") {
+                            bootbox.alert("Quota type not set. Please contact University.");
+                            FeesValid = false;
+                        }
+                        else {
+
+                        }
+                    }
+                });
+                if (FeesValid == false) {
+                    return false;
+                }
+
+
+
+
+            }
+        }
+
+        function ReAdmission_Offline_Payment()
+        {
+
+             var id = '1137698';
+            if (id != "") {
+
+                bootbox.confirm({
+                    title: "Confirm",
+                    closeButton: false,
+                    message: ("Are you Sure you want to Pay Re-Admission Fees?"),
+                    buttons: {
+                        confirm: {
+                            label: 'Yes',
+                            className: 'btn-success'
+                        },
+                        cancel: {
+                            label: 'No',
+                            className: 'btn-danger'
+                        }
+                    },
+                    closeButton: false,
+                    callback: function (result) {
+
+                        if (result == true) {
+                            var url = "/Admission/UploadFeePaidDetailsUGReAdmission?StudAppID=" + id;
+                            window.location.href = url;
+                        }
+                    }
+                });
+
+            }
+
+
+        }
+
+        $("#SingleMajorcheck").on('change', function () {
+            var SarID = "936115";
+            var SchemeTypeID = "1";
+            var MajorTypeID = 0;
+
+            if (parseInt(SchemeTypeID) == 1) {
+                if ($('#SingleMajorcheck').is(":checked")) {
+                    $("#MajorTypeID").val("1");
+                    $('#DC2Div').hide();
+                }
+                else {
+                    $("#MajorTypeID").val("2");
+                    $('#DC2Div').show();
+                }
+            }
+            else if (parseInt(SchemeTypeID) == 3) {
+                if ($('#SingleMajorcheck').is(":checked")) {
+                    $("#MajorTypeID").val("2");
+                    MajorTypeID = 2;
+                }
+                else {
+                    $("#MajorTypeID").val("1");
+                    MajorTypeID = 1;
+                }
+                $('#DC2Div').hide();
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Login/GetDiciplinesForMajorSelection",
+                    data: { SarID: SarID, SchemeTypeID: SchemeTypeID, MajorTypeID: MajorTypeID },
+                    success: function (data) {
+                        $("#DC1ID").empty();
+                        if (data.length > 0) {
+                            $.each(data, function (index, item) {
+                                $("#DC1ID").append($("<option></option>").val(item.Value).html(item.Text));
+                            });
+                        }
+                    }
+                });
+            }
+            $('#DC1ID').val("");
+            $('#DC2ID').val("");
+        });
+
+        function ReAdmissionToNEP_Online_Payment()
+        {
+
+            var AppID = '';
+            if (AppID != "") {
+
+                var FeesValid = true;
+                $.ajax({
+                    type: "POST",
+                    url: "/Admission/GetReAdmissionToNEPFeesSetupStatus",
+                    data: { StudAppID: AppID },
+                    aysnc:false,
+                    success: function (data) {
+
+                        if (data == "Proceed") {
+                            FeesValid = true;
+
+                            $.ajax({
+                                type: "POST",
+                                url: "/Admission/GetNSDLCollegeStatusForReAdmToNEP",
+                                data: { Registration_id: AppID },
+                                aysnc: false,
+                                success: function (data) {
+
+                                    if (data == "UniversityFeesetupNull") {
+                                        bootbox.alert("Fee has not been set up by University, please contact University.");
+                                    }
+                                    else if (data == "CollegeFeesetupNull") {
+                                        bootbox.alert("Fee has not been set up by College, please contact College.");
+                                    }
+                                    else if (data == "UniversityNSDLsetupNull") {
+                                        bootbox.alert("This University is not available for online payment, please contact University.");
+                                    }
+                                    else if (data == "COllegeNSDLsetupNull") {
+                                        bootbox.alert("This College is not available for online payment, please contact College.");
+                                    }
+                                    else if (data == "UniversityCollegeFeesetupZero") {
+                                        bootbox.alert("Fee has not been set up by University, please contact University.");
+                                    }
+                                    else if (data == "UniversityFeesetupZero") {
+                                        bootbox.alert("Fee has not been set up by University, please contact University.");
+                                    }
+                                    else if (data == "UniversityCollegeFeesetupNull") {
+                                        bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                                    }
+                                    else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                                        bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                                    }
+                                    else {
+                                            bootbox.confirm({
+                                                title: "Confirm",
+                                                closeButton: false,
+                                                message: ("Are you Sure you want to Pay Re-Admission Fees?"),
+                                                buttons: {
+                                                    confirm: {
+                                                        label: 'Yes',
+                                                        className: 'btn-success'
+                                                    },
+                                                    cancel: {
+                                                        label: 'No',
+                                                        className: 'btn-danger'
+                                                    }
+                                                },
+                                                closeButton: false,
+                                                callback: function (result) {
+
+                                                    if (result == true) {
+                                                        var url = "/Admission/PayOnline?Id=" + AppID + "&PurposeofPayment=37";
+                                                        window.location.href = url;
+                                                    }
+                                                }
+                                            });
+                                    }
+                                }
+                            });
+
+                        }
+                        else if (data == "UNINotSetupFees") {
+                            bootbox.alert("Fee has not been set up by University, Please contact University.");
+                            FeesValid = false;
+                        }
+                        else if (data == "UNINotSetupIncomeLimit" || data == "UNINotSetupGeneralIncomeLimit") {
+                            bootbox.alert("University has not setup Income limit. Please contact University.");
+                            FeesValid = false;
+                        }
+                        else if (data == "UNINotSetupGeneralFees" ) {
+                            bootbox.alert("University has not setup Fees. Please contact University.");
+                            FeesValid = false;
+                        }
+
+                        else if (data == "CLGNotSetupFees") {
+                            bootbox.alert("Fee has not been set up by College, Please contact College.");
+                            FeesValid = false;
+                        }
+                        else if (data == "CLGNotSetupIncomeLimit" || data == "ClgNotSetupGeneralIncomeLimit") {
+                            bootbox.alert("College has not setup Income limit. Please contact College.");
+                            FeesValid = false;
+                        }
+                        else if (data == "ClgNotSetupGeneralFees") {
+                            bootbox.alert("College has not setup Fees. Please contact College.");
+                            FeesValid = false;
+                        }
+                        else if (data == "QuotaTypeNotSet") {
+                            bootbox.alert("Quota type not set. Please contact University.");
+                            FeesValid = false;
+                        }
+                        else {
+
+                        }
+                    }
+                });
+                if (FeesValid == false) {
+                    return false;
+                }
+
+            }
+        }
+
+        function ReAdmissionToNEP_Offline_Payment()
+        {
+
+            var AppID = '';
+            if (AppID != "") {
+
+                bootbox.confirm({
+                    title: "Confirm",
+                    closeButton: false,
+                    message: ("Are you Sure you want to Pay Re-Admission Fees?"),
+                    buttons: {
+                        confirm: {
+                            label: 'Yes',
+                            className: 'btn-success'
+                        },
+                        cancel: {
+                            label: 'No',
+                            className: 'btn-danger'
+                        }
+                    },
+                    closeButton: false,
+                    callback: function (result) {
+
+                        if (result == true) {
+                            var url = "/Admission/UploadFeePaidDetailsUGReAdmission?StudAppID=" + AppID;
+                            window.location.href = url;
+                        }
+                    }
+                });
+
+            }
+
+
+        }
+
+        function Logout() {
+            location.replace("/Login/Logout");
+        }
+
+        function GotoManageProfile() {
+            location.replace("/studentregistration/manageprofile?ForceUpdate=true");
+        }
+
+        function UploadPhotoSignature() {
+            location.replace("/Login/UploadPhotoandSignature");
+        }
+    </script>
+
+/body>
+
+</html>
+<script>
+
+    function downloadFile(folder, filename) {
+        window.open("/Login/DownloadFile?folder=" + folder + "&filename=" + filename, "_blank");
+    }
+
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    }
+
+    document.onkeydown = (e) => {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+        if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+            return false;
+    };
+
+
+    </script>

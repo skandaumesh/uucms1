@@ -1,0 +1,849 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>UUCMS - ಸಮಗ್ರ ವಿಶ್ವವಿದ್ಯಾಲಯ ಮತ್ತು ಕಾಲೇಜು ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ </title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/Content/images/favicon.png" type="image/png" />
+    <link href="/Content/images/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <!-- Vendor CSS Files -->
+    
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/Content/dataTables.bootstrap5.3.min.css">
+    <link rel="stylesheet" href="/Content/jquery-ui.min-1.14.1.css">
+    <link rel="stylesheet" href="/Content/jquery-ui-css/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Content/bootstrap-multiselect-1.1.2.min.css">
+    <link rel="stylesheet" href="/Content/dataTables.dataTables.css">
+    <link rel="stylesheet" href="/Content/buttons.dataTables.css">
+    <link rel="stylesheet" href="/Content/css/select2.css">
+    <link rel="stylesheet" href="/Content/aos.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/Site.css">
+    <link rel="stylesheet" href="/Content/loader.css">
+    <link rel="stylesheet" href="/Styles/exam_styles.css">
+    <link rel="stylesheet" href="/Content/plugins.min.css">
+
+
+    <link href="/Content/icofont.min.css" rel="stylesheet" />
+    <link href="/Content/icofont.woff" />
+    <link href="/Content/icofont.woff2" />
+    <link href="/Content/fontawesome-webfont.ttf" />
+    <link href="/Content/fontawesome-webfont.woff" />
+    <link href="/Content/fontawesome-webfont.woff2" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+
+    
+    <script src="/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+    <script src="/Scripts/CaptchaLib.js"></script>
+    <script src="/Scripts/jquery-ui-1.14.1.min.js"></script>
+    <script src="/Scripts/aos.js"></script>
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/aes.js"></script>
+    <script src="/Scripts/digital-signature-certificate-service.js"></script>
+   
+    <style>
+
+        #topbar {
+            background: #07294d;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+            #topbar .contact-info a {
+                line-height: 1;
+                color: #fff;
+                transition: 0.3s;
+            }
+
+                #topbar .contact-info a:hover {
+                    color: #fff;
+                }
+
+            #topbar .contact-info i {
+                color: #428bca;
+            }
+
+        .clearfix {
+            padding: 0px 12px;
+        }
+
+        #topbar .contact-info .icofont-phone {
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        #MenuDiv {
+            background-color: #07294d !important;
+        }
+
+        .drop-down {
+            padding: 5px 5px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: none;
+            color: #103453;
+            background: #fff;
+        }
+
+        a.dropdown-item.dropdown-toggle::after {
+            color: #1324bc !important;
+        }
+
+        li.drop-down > a.dropdown-item:hover, li.drop-down a.dropdown-item:hover a:after {
+            color: #1324bc !important;
+            background-color: transparent;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 10%;
+                left: 100%;
+                margin-top: -1px;
+            }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu > .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: -1px;
+                -webkit-border-radius: 0 6px 6px 6px;
+                -moz-border-radius: 0 6px 6px;
+                border-radius: 0 6px 6px 6px;
+            }
+
+            .dropdown-submenu:hover > .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-submenu > a:after {
+                display: block;
+                content: " ";
+                float: right;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 5px 0 5px 5px;
+                border-left-color: #ccc;
+                margin-top: 5px;
+                margin-right: -10px;
+            }
+
+            .dropdown-submenu:hover > a:after {
+                border-left-color: #fff;
+            }
+
+            .dropdown-submenu.pull-left {
+                float: none;
+            }
+
+                .dropdown-submenu.pull-left > .dropdown-menu {
+                    left: -100%;
+                    margin-left: 10px;
+                    -webkit-border-radius: 6px 0 6px 6px;
+                    -moz-border-radius: 6px 0 6px 6px;
+                    border-radius: 6px 0 6px 6px;
+                }
+
+        a.nav-link.dropdown-toggle {
+            font: bold;
+            color: white;
+        }
+
+        .table-bordered > thead > tr > th {
+            background-color: #07294d;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+<style type="text/css">
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #profile .dropdown-menu li {
+        padding-left: 1em;
+        padding-bottom: 5px;
+    }
+
+    .login-user-align {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .login-user-align > p {
+            padding-right: 25px;
+        }
+</style>
+<header class="header-area">
+    <div class="container-fluid p-0">
+
+        <section id="topbar" class="d-lg-block rounded-top">
+            <div class="clearfix">
+                <div class="contact-info float-start">
+                    <i class="icofont-envelope"></i><a>contact-uucms.helpdesk@gmail.com</a>
+                </div>
+                <div class="social-links float-end me-18">
+                    <a class='whiteblack accessibility' href='#' onclick="changeColor()" title='Black and White'>A</a>
+                    <a class='standards accessibility' href='#' onclick="defaultColor()" title='Standard'>A</a>
+                    <button id="decreasetext" class="font-size-btn accessibility">
+                        <span>-</span>
+                    </button>
+                    <button id="resettext" class="font-size-btn accessibility">
+                        <span>A</span>
+                    </button>
+                    <button id="increasetext" class="font-size-btn accessibility">
+                        <span>+</span>
+                    </button>
+					
+                </div>
+            </div>
+        </section>
+
+        <section id="kan_banner" class="banner" style="display:none">
+            <div class="row">
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/UUCMS_Logo-01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_kan/sid_cm_kan.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_kan/new_min_kan.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/gok-logo-uucms-kn.png" class="img-fluid" />
+					
+                </div>
+            </div>
+        </section>
+        <section id="eng_banner" class="banner">
+            <div class="row">
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_kan/UUCMS_Logo-01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_eng/sid_cm_eng.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <img src="/Content/images/index_eng/new_min_eng.png" class="img-fluid" />
+                </div>
+                <div class="col-md-3 text-center align-self-center">
+                    <img src="/Content/images/index_eng/gok-logo-uucms-en.png" class="img-fluid" />
+					
+                </div>
+            </div>
+        </section>
+		<section>
+		<div class ="bhashini-plugin-container"></div>
+					 <script src="https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js" data-pos-x="95" data-pos-y="5"></script>
+		</section>
+
+    </div>
+        <div class="container-fluid p-0 nav-menu rounded" id="MenuDiv">
+            <nav class="navbar navbar-expand-lg navbar-dark rounded">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icofont-navigation-menu text-black"></i><br>
+                        <!--<span class="navbar-toggler-icon"></span>-->  <!-- This creates the 3-line burger icon -->
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="active"><a class="nav-link active" href="/Login/Success">Home</a></li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Student" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Student">Student</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Student">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Student Profile</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentProfile/StudentProfile">Student Profile</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Profile Edit List</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentProfile/GetStudentProfileEditDetailssp">Profile Edit List</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Scholarship</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Scholarship Notifications">Scholarship</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Hostel Notifications</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Hostel Notifications">Hostel Notifications</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Placement News</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Placement News">Placement News</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Defence/Govt Recruitment</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Defence/Govt Recruitment Notifications">Defence/Govt Recruitment</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Internship &amp; Training</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Internship Training Notifications">Internship &amp; Training</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Cultural/Sports</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Extra Curricular">Cultural/Sports</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Other Notifications</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/BulletinAndNotifications/StudentNotifications?PageName=Other Notifications">Other Notifications</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Revalidate Aadhaar</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentRegistration/ManageProfile">Revalidate Aadhaar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Bus Pass</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentProfile/BusPass">Bus Pass</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Academics" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Academics">Academics</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Academics">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Course Registration</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/CourseRegistrationByStudent/StudentCourses">Course Registration</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Academic Calender Of Events</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/HolidayList/StudentView">HolidayList</a></li>
+                                                                <li class="drop-down"><a class="dropdown-item" href="/AcademicCalenderOfEvents/AcademicCalendarStudentView">Calendar of Events</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">View Timetable</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/TimeTable/StudentTimeTable">View Timetable</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Proctor/Counsellor System</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ProctorSystem/StudentProctorDetails">View Assigned Proctor/Counsellor</a></li>
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ProctorSystem/StudentMeetingDetails">View Meetings</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Exam" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Exam">Exam</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Exam">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Exam Applications</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ExamGeneral/ExamApplications">Exam Applications</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Student Fee Payment Transaction Details</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/GeneralFee/StudentwiseTransactionHistory">Student Fee Payment Transaction Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Exam Re-evaluation</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ExamReEvaluation/StudentRevaluations">Exam Re-evaluation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Rejection of Results</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ExamGeneral/RejectionApplication">Rejection of Results</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Challenge Valuation</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/ChallengeEvaluation/ChallengeEvaluationAplications">Exam challenge-valuation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Convocation</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/Convocation/StudentConvocationNotificationDetails">Convocation</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Student Services</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/StudentServices/ApplyForStudentServices">Student Services</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Reports" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Reports">Reports</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Reports">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Admission Payment Transaction History</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/MIS/CandidateAdmissionTransactionHistory">Admission Payment Transaction History</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" id="nav-Help Desk" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static" data-container="#nav-Help Desk">Help Desk</a>
+                                        <ul class="dropdown-menu" aria-labelledby="nav-Help Desk">
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Raise Compliant</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/HelpDesk/RegisterComplaint">Raise Compliant</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="drop-down dropdown-submenu">
+                                                        <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">View Compliant</a>
+                                                        <ul class="dropdown-menu">
+
+                                                                <li class="drop-down"><a class="dropdown-item" href="/HelpDesk/viewComplaintDetails">View Compliant</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+
+                        </ul>
+
+                    </div>
+                        <div class="dropdown dropbtn" accesskeyid="profile">
+                            <button class="btn  dropdown-toggle" style="color:white;" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <em class="mr-2"><i class="fa fa-user-circle  fa-1x " aria-hidden="true"></i></em>
+                            </button>
+							 
+                   
+                            <ul class="dropbtn dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                								
+                                <li>
+                                    <a class="nav-link" href="/Login/Logout" onclick="removeSessionCookie(); window.location.href=&#39;/Login/Logout&#39;; return false;">Logout</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 login-user-align">
+                        <p class="login-name ">SKANDA M U UMESH (MLA Academy of Higher Learning, Malleswaram, )</p>
+            </div>
+        </div>
+
+</header>
+<style>
+.bhashini-plugin-container{
+position:absolute;
+top:65px;
+right:25px;
+background-color:#EF731B;
+ 
+}
+ 
+</style>
+<script type="text/javascript">
+    function onLinguistics(element) {
+
+        if ($(element).hasClass("knlan")) {
+            $("#eng_banner").hide();
+            $("#kan_banner").show();
+        }
+        else {
+            $("#kan_banner").hide();
+            $("#eng_banner").show();
+        }
+    }
+	 
+</script>
+    <div class="loader-modal" style="display:none;">
+        <div class="loader"></div>
+    </div>
+
+    <main id="main" class="main-head">
+        
+
+
+<style>
+    .card-header {
+        background: rgb(193 212 232 / 25%);
+    }
+</style>
+
+<div class="breadcrumb-head">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item breadcrumb-text"><a href="/Login/Success"><label class="Enlan" style="display: inline-block;">Home</label></a></li>
+
+                    <li class="breadcrumb-item active" aria-current="page"><label class="Enlan" style="display: inline-block;"> Exam Re-Evaluation</label></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="L_B9uBsFIKbqhIZlt-AjTT5Xh0F-97nnI2YrcDYb7g_WBhZ-7FUxLXdHbAkb_VWWgXRurWIUqYrMNz38R4NHw5Ffn0xO0I9g8TCqzYGGdpg1" />
+
+    <div class="card card-default">
+        <div class="card-header">
+            <h4 class="mt-2 text-center">
+                Exam Re-Evaluation
+            </h4>
+        </div>
+        <div class="card-body">
+
+            <div class="form-group col-sm-12">
+
+                <div class="tab-content" id="tblOriginal">
+                    <div class="table-responsive">
+                        <table class="table-bordered mytable" id="tblFreeMatrix">
+                            <thead class="text-center p-2 bg-warning">
+                                <tr>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">Sl. No.</th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">Exam Month</th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">Exam Type</th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">
+                                        Program Level
+                                    </th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">
+                                        Program Name
+                                    </th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">
+                                        Term
+                                    </th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">
+                                        Re-evaluation Application Start Date
+                                    </th>
+                                    <th style="vertical-align: middle; text-align: center;width: 100px!important;">
+                                        Re-evaluation Application End Date
+                                    </th>
+                                    <th style="vertical-align: middle; text-align: center;width: 300px!important;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <p class="postactivityheading"><span class="fa fa-warning"><strong> Important :</strong></span></p>
+        <p class="postactivitytext">1).Required Fee has to be set greater than zero. </p>
+        <p class="postactivitytext">2).Open Evaluation courses will not be enabled for re-evaluation. </p>
+        <p class="postactivitytext">3).Minimum Re-evaluation marks and Re-evaluation Type has to be set in Exam Guidlines in Registrar Login. </p>
+        <p class="postactivitytext">3).Courses applied for rejection of result will not be enabled for re-evaluation application.</p>
+
+    </div>
+
+
+    </main>
+    <section id="con" class="footer" style="background-color:#07294d; padding: 1px 0px 1px 0px; margin: 10px 0px 0px 0px;">
+        <div class="container-fluid">
+            <div class="col-md-12">
+
+                <div class="disclaimer">
+
+                    <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Disclaimer:</span>Please note this page also provides links to websites/web pages of Govt. Ministries/Departments/Organisations.The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion. This application is best viewed and fully supported on web-based platforms using the latest version of Google Chrome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="con" class="footer-tollnumber" style="background-color:#07294d; padding: 1px 0px 1px 0px">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="disclaimer">
+                        <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Technical Help Desk Number :</span>080-24411500(10AM-5.30PM)</p>
+                        <h6 class="text-white text-center mt-1 pb-1" style="font-size:12px;"><span class="disclaimer">Email:</span> uucms.helpdesk@karnataka.gov.in</h6>
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="disclaimer">
+                                <p class="text-white text-center mt-1" style="font-size:12px;">
+                                    <span class="disclaimer">For Payment Related Queries, please contact :</span>+91-022-24994200, +91-022-49142595 <span class="disclaimer">Email:</span> info_ndml@ndml.in
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="disclaimer">
+                                <p class="text-white text-center mt-1" style="font-size:12px;">
+                                    <span class="disclaimer"> Bhashini Disclaimer :</span> <a style="color:white" href="https://bhashini.gov.in/gyankosh?tab=terms-of-use&fromFooter=true" target="_blank">Legal & Policies - Terms of Use</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="copyright-section">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p style="font-size:12px;"> Copyright &copy; 2021 all rights reserved. Designed &amp; Developed by Centre for Smart Governance (V_ADM_4.10_A1.7_E_0.3)<span style="color:#fff">S9</span></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="/Scripts/jquery-dropdown-datepicker.min.js"></script>
+
+    <script src="/Scripts/select2.min.js"></script>
+
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/bootstrap-multiselect-1.1.2.min.js"></script>
+    <script src="/Scripts/bootbox.min.js"></script>
+    <script src="/Scripts/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/dataTables.js"></script>
+    <script src="/Scripts/dataTables.buttons.js"></script>
+    <script src="/Scripts/buttons.dataTables.js"></script>
+    <script src="/Scripts/jszip.min.js"></script>
+    <script src="/Scripts/pdfmake.min.js"></script>
+    <script src="/Scripts/vfs_fonts.js"></script>
+    <script src="/Scripts/buttons.html5.min.js"></script>
+    <script src="/Scripts/buttons.print.min.js"></script>
+    <script src="/Scripts/dataTables.bootstrap5.3.min.js"></script>
+    <script src="/Scripts/dataTables.fixedHeader.min.js"></script>
+
+    <script src="/Scripts/common.js"></script>
+    <script src="/Scripts/XSS-validation-0.0.1.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+
+            var SessionRoleID = "2";
+            if (SessionRoleID == "4") {
+                var SessionSarID = "";
+                var SessionregistrationNo = "";
+            }
+            var table = $('#tblFreeMatrix').DataTable({
+                "bSort": true,
+                "destroy": true,
+                //scrollX: true,
+                "ajax": {
+                    "LengthMenu": [0, 1, 2, 3, 4, 5, 6, 7],
+                    "url": "/ExamReEvaluation/GetReevaluationApplications",
+                    "type": "POST",
+                    "datatype": "json",
+                    "data": { __RequestVerificationToken: $('[name=__RequestVerificationToken]').val() },
+                    "dataSrc": "",
+                    "autoWidth": false,
+                },
+                "columnDefs": [
+                    { "width": "100px", "targets": 0 },
+                    { "width": "100px", "targets": 1 },
+                    { "width": "100px", "targets": 2 },
+                    { "width": "100px", "targets": 3 },
+                    { "width": "100px", "targets": 4 },
+                    { "width": "100px", "targets": 5 },
+                    { "width": "100px", "targets": 6 },
+                    { "width": "100px", "targets": 7 },
+                ],
+                "columns": [
+                    {
+                        "render": function (d, t, r, m) {
+                            return (m.row + 1);
+                        }
+                    },
+                    { "data": "examMonth", "name": "examMonth" },
+                    { "data": "examType", "name": "examType" },
+                    { "data": "plLevel", "name": "plLevel" },
+                    { "data": "plName", "name": "plName" },
+                    { "data": "termName", "name": "termName" },
+                    { "data": "start_Date", "name": "start_Date" },
+                    { "data": "end_Date", "name": "end_Date" },
+
+                    {
+                        "data": "Id", "name": "Id",
+
+                        fnCreatedCell: function (nTd, sData, oData, iRow, iCol) {
+                            var d = new Date();
+                            const now = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+                            if (oData.start_Date != "" && oData.start_Date != null && oData.end_Date != "" && oData.end_Date != null) {
+                                oData.start_Date = convertToJavaScriptDate(oData.startDate);
+                                oData.end_Date = convertToJavaScriptDate(oData.endDate);
+
+                                if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date >= now && oData.reevalApplicationAvailable >= 1 && oData.photoCopyCount > 0 && oData.IsReEvalResultPublished ==false) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Apply Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewStudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>View Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentDownloadphotocopy?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Download Photocopy</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a>");
+                                }
+                                else if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date >= now && oData.reevalApplicationAvailable >= 1 && oData.photoCopyCount == 0 && oData.IsReEvalResultPublished == false) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Apply Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewStudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>View Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a>");
+                                }
+                                else if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date >= now && oData.reevalApplicationAvailable == 0 && oData.photoCopyCount == 0 && oData.IsReEvalResultPublished == false) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Apply Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a>");
+                                }
+                                else if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date >= now && oData.reevalApplicationAvailable == 0 && oData.photoCopyCount > 0 && oData.IsReEvalResultPublished == false) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Apply Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentDownloadphotocopy?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Download Photocopy</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a>");
+                                }
+                                else if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date <= now && oData.reevalApplicationAvailable >= 1 && oData.photoCopyCount > 0 && oData.IsReEvalResultPublished == false) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewStudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>View Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentDownloadphotocopy?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>Download Photocopy</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a>");
+                                }
+                                else if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date <= now && oData.reevalApplicationAvailable >= 1 && oData.photoCopyCount == 0 && oData.IsReEvalResultPublished == false) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewStudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>View Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a>");
+                                }
+                                else if (oData.IsResultPublished == true && oData.start_Date <= now && oData.end_Date <= now && oData.reevalApplicationAvailable >= 1 && (oData.photoCopyCount == 0 || oData.photoCopyCount > 0) && oData.IsReEvalResultPublished == true) { //  && oData.startDate >= now && oData.endDate <=now
+                                    $(nTd).html("<a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewStudentReEvaluationApplication?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "' class='underline'>View Re-Evaluation Application</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/ViewReevaluationNotification?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&spctID=" + oData.spctId + "' class='underline'>View Exam Re-evaluation Notification</a><br><a style='color:blue;text-decoration:underline' href='/ExamReEvaluation/StudentReExamResult?termId=" + oData.termID + "&enbsid=" + oData.enbs_id + "&StudentregistrationNo=" + SessionregistrationNo + "&eetypeid=" + -1 + "'>View Re-evaluation Result</a><br/>");
+                                }
+                                else if (oData.IsResultPublished == false && oData.start_Date <= now && oData.end_Date >= now && oData.reevalApplicationAvailable == 0 && oData.IsReEvalResultPublished == false) {
+                                    $(nTd).html("Result not Yet Published");
+
+                                }
+                                else {
+                                    $(nTd).html("");
+                                }
+                            }
+                            else {
+                                $(nTd).html("Re-evaluation notification is not set");
+                            }
+                        }
+                    },
+
+                ],
+            });
+            table.on('order.dt search.dt', function () {
+                table.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+                    cell.innerHTML = i + 1;
+                    table.cell(cell).invalidate('dom');
+                });
+            }).draw()
+
+        });</script>
+    <script>
+        function convertToJavaScriptDate(value) {
+
+            var pattern = /Date\(([^)]+)\)/;
+            var results = pattern.exec(value);
+            var dt = new Date(parseFloat(results[1]));
+            return dt;
+        }
+    </script>
+
+/body>
+
+</html>
+<script>
+
+    function downloadFile(folder, filename) {
+        window.open("/Login/DownloadFile?folder=" + folder + "&filename=" + filename, "_blank");
+    }
+
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+    }
+
+    document.onkeydown = (e) => {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+        if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+            return false;
+    };
+
+
+    </script>
